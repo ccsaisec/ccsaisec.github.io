@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="generator" content="HTML Tidy for HTML5 for Apple macOS version 5.6.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="AI and Security Workshop (AISec)">
+    <meta name="keywords"
+        content="Deep Learning, Machine Learning, Security, Adversarial Examples, Attacks, Intrusion Detection, Program Analysis, Malware, Botnets, Vulnerability, Phishing, Forensics, Neural Networks, Recurrent Networks, Generative Adversarial Networks, AISec">
+    <!-- <meta name="google-site-verification" content="fWZQaCZK60Kuf_kX_YAzvQ_mWIYrRt4k2cgrVXPpqgw"> -->
+    <meta name="author" content="AISec Chairs">
+    <title>16th ACM Workshop on Artificial Intelligence and Security (AISec 2023)</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=K2D:400,700' rel='stylesheet' type='text/css'>
+    <!-- Custom styles for this template -->
+    <link href="css/agency.css" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QDQDHN7F62"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-QDQDHN7F62');
+    </script>
+
+</head>
+
+<body id="page-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">AISec 2023</a> <button
+                class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">Menu</button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#page-top">Home</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#keynote">Keynote</a>
+                    </li> -->
+                    <!-- <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#programme">Programme</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#cfp">Call for Papers</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#award">Best Paper Award</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#committee">Committee</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" target="_blank"
+                            href="https://www.sigsac.org/ccs/CCS2023/">ACM CCS</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead">
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-heading">
+                    16<sup><small><b>th</b></small></sup> ACM Workshop on <br>
+                    Artificial Intelligence and Security
+                </div>
+                <div class="intro-lead-in">
+                    <b>November 30, 2023</b> — Copenhagen</b>
+                </div>
+                <div class="intro-lead-in">
+                    co-located with the 30th ACM Conference on Computer and Communications Security
+                </div>
+                <div class="photo-credit">
+                    Photo: <a target="_blank" href="https://pixabay.com/">Pixabay</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Keynotes -->
+
+    <!-- <section id="keynote">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-justify">
+                    <h2 class="section-heading text-uppercase">Keynote</h2>
+                    <h3 class="section-subheading"><b>Title: Protecting (and breaking) dataset privacy in computer
+                            vision and federated learning</b><br>
+                        Tom Goldstein, University of Maryland, USA</h3>
+                </div>
+                <div class="col-lg-10 text-justify">
+                    <p><em>Abstract</em></p>
+                    <p>In this talk, I'll discuss ways that adversarial methods can be used to attack dataset privacy.
+                        Unlike conventional "adversarial attacks" that seek to flip the label that comes out of a neural
+                        network, I'll present a slate of adversarial methods that can be used to extract training data
+                        from models or force federated learning systems to leak the personal training data of their
+                        clients via publicly visible gradient updates. I'll also discuss how adversarial methods can be
+                        used to de-incentivize the scraping of personal data for unauthorized use by creating
+                        unlearnable datasets that cannot be used for model training even if they are maliciously
+                        obtained.</p>
+                    <p>
+                    </p>
+
+                    <p><em>Biography</em></p>
+                    <p>Tom Goldstein is the Perotto Associate Professor of Computer Science at the University of
+                        Maryland. His research lies at the intersection of machine learning and optimization, and
+                        targets applications in computer vision and signal processing. Before joining the faculty at
+                        Maryland, Tom completed his PhD in Mathematics at UCLA, and was a research scientist at Rice
+                        University and Stanford University. Professor Goldstein has been the recipient of several
+                        awards, including SIAM’s DiPrima Prize, a DARPA Young Faculty Award, a JP Morgan Faculty award,
+                        and a Sloan Fellowship.</p>
+                </div>
+                <div class="col-lg-2 text-justify">
+                    <center><img src="img/tom_goldstein.jpg" class="portait"></center>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+
+
+    <!-- Programme
+    <section class="bg-light" id="programme">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-justify">
+                    <h2 class="section-heading text-uppercase">Programme</h2>
+
+                    <table cellpadding="5">
+
+                        <p>The following times are on PDT (UTC -7).</p>
+                        <tr>
+                            <td class="orga" width="120px">09:00&ndash;9:10</td>
+                            <td class="orga">Opening and Welcome</td>
+                        </tr>
+
+                        <tr>
+                            <td class="orga" width="120px">9:10&ndash;10:00</td>
+                            <td class="orga uline">Keynote: Protecting (and breaking) dataset privacy in computer vision
+                                and federated learning, Prof. Tom Goldstein</td>
+                        </tr>
+
+                        <tr>
+                            <td class="orga">10:00&ndash;10:20</td>
+                            <td class="orga">Coffee break</td>
+                        </tr>
+
+                        <tr>
+                            <td class="orga">10:20-:12:00</td>
+                            <td class="orga uline">Session: Privacy-Preserving Machine Learning </td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td><em class="paper">Label-Only Membership Inference Attack against Node-Level Graph Neural
+                                    Networks</em>
+                                <br>Authors: Mauro Conti (University of Padua & Delft University of Technology), Jiaxin
+                                Li (University of Padua), Stjepan Picek (Radboud University & Delft University of
+                                Technology), Jing Xu (Delft University of Technology)
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td><em class="paper">Repeated Knowledge Distillation with Confidence Masking to Mitigate
+                                    Membership Inference Attacks</em>
+                                <br>Authors: Federico Mazzone, Leander van den Heuvel, Maximilian Huber, Cristian
+                                Verdecchia, Maarten Everts, Florian Hahn (University of Twente, The Netherlands),
+                                Andreas Peter (University of Oldenburg, Germany)
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td><em class="paper">Forgeability and Membership Inference Attacks</em>
+                                <br>Authors: Zhifeng Kong, Amrita Roy Chowdhury, Kamalika Chaudhuri(UCSD)
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td><em class="paper">PROV-FL: Privacy-preserving Round Optimal Verifiable Federated
+                                    Learning</em>
+                                <br>Authors: Vishnu Asutosh Dasu (The Pennsylvania State University), Sumanta Sarkar
+                                (University of Warwick), Kalikinkar Mandal (University of New Brunswick)
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td><em class="paper">Inferring Class-Label Distribution in Federated Learning</em>
+                                <br>Authors: Raksha Ramakrishna, György Dán (KTH Royal Institute of Technology)
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td><em class="paper">Introduction to the Second Round of a Machine Learning Model
+                                    Attribution Challenge</em>
+                                <br>Authors: Deepesh Chaudhari (Plaintext Group), Hyrum S. Anderson (Robust
+                                Intelligence), Keith Manville (MITRE), Lily Wong (MITRE); Yonadav Shavit (Plaintext
+                                Group)
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td class="orga">12:15&ndash;14:00</td>
+                            <td class="orga">Lunch</td>
+                        </tr>
+
+
+                        <tr>
+                            <td class="orga">14:00-14:40</td>
+                            <td class="orga uline">Session 2A: Adversarial Machine Learning</td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td><em class="paper">Video is All You Need: Attacking PPG-based Biometric
+                                    Authentication</em>
+                                <br>Authors: Lin Li (Swinburne University of Technology), Chao Chen (RMIT University),
+                                Lei Pan (Deakin University, Australia), Jun Zhang, Yang Xiang (Swinburne University of
+                                Technology)
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td></td>
+                            <td><em class="paper">Magnitude Adversarial Spectrum Search-based Black-box Attack against
+                                    Image Classification</em>
+                                <br>Authors: Kim A. B. Midtlid, Johannes Åsheim, Jingyue Li (Norwegian University of
+                                Science and Technology)
+                            </td>
+                        </tr>
+
+
+
+                        <tr>
+                            <td class="orga">14:40&ndash;15:00</td>
+                            <td class="orga">Break</td>
+                        </tr>
+
+                        <tr>
+                            <td class="orga">15:00-16:00</td>
+                            <td class="orga uline">Session2B: Adversarial Machine Learning</td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td><em class="paper">Assessing the Impact of Transformations on Physical Adversarial
+                                    Attacks</em>
+                                <br>Authors: Paul-Andrei Sava, Jan-Philipp Schulze, Philip Sperl, Konstantin Böttinger
+                                (Fraunhofer AISEC)
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td></td>
+                            <td><em class="paper">Just Rotate it: Deploying Backdoor Attacks via Rotation
+                                    Transformation</em>
+                                <br>Authors: Tong Wu, Tianhao Wang, Vikash Sehwag, Saeed Mahloujifar, Prateek Mittal
+                                (Princeton University)
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td></td>
+                            <td><em class="paper">Proactive Detection of Query-based Adversarial Scenarios in NLP
+                                    Systems</em>
+                                <br>Authors: Mohammad Maghsoudimehrabani, Amin Azmoodeh, Ali Dehghantanha, Behrouz
+                                Zolfaghari (University of Guelph), Gautam Srivastava (Brandon University)
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td class="orga">16:00-17:40</td>
+                            <td class="orga uline">Session: Machine Learning for Cybersecurity</td>
+                        </tr>
+
+
+                        <tr>
+                            <td></td>
+                            <td><em class="paper">Context-based Clustering to Mitigate Phishing Attacks</em>
+                                <br>Authors: Tarini Saka, Kami Vaniea, Nadin Kokciyan (University of Edinburgh)
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td></td>
+                            <td><em class="paper">Quo Vadis: Hybrid Machine Learning Meta-Model based on Contextual and
+                                    Behavioral Malware Representations</em>
+                                <br>Authors: Dmitrijs Trizna (Microsoft)
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td></td>
+                            <td><em class="paper">Optimising Vulnerability Triage in DAST with Deep Learning</em>
+                                <br>Authors: Stuart Millar (Rapid7 LLC), Denis Podgurskii (OWASP), Dan Kuykendall
+                                (Rapid7 LLC), Jesus Martinez del Rincon, Paul Miller (Centre for Secure Information
+                                Technologies, Queen's University Belfast)
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td></td>
+                            <td><em class="paper">Bridging Automated to Autonomous Cyber Defense: Foundational Analysis
+                                    of Tabular Q-Learning</em>
+                                <br>Authors: Andy Applebaum, Camron Dennler, Patrick Dwyer, Marina Moskowitz, Harold
+                                Nguyen, Nicole Nichols, Nicole Park, Paul Rachwalski, Frank Rau, Adrian Webster, Melody
+                                Wolk (Apple)
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td class="orga">17:40&ndash;18:00</td>
+                            <td class="orga">Closing remarks</td>
+                        </tr>
+
+
+                    </table>
+                </div>
+            </div>
+        </div> -->
+
+
+    </section><!-- CFP -->
+    <section id="cfp">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-justify">
+                    <h2 class="section-heading text-uppercase">Call for Papers</h2>
+                    <h3 class="section-subheading">Important Dates</h3>
+                    <ul>
+                        <li>Paper submission deadline: June 24, 2023, 11:59 PM (AoE, UTC-12)</li>
+                        <!-- <li>Paper submission deadline: <s>June 24</s> July 20, 2023, 11:59 PM (AoE, UTC-12)</li> -->
+                        <li>Reviews released: July 25, 2023</li>
+                        <!-- <li>Reviews released: <s>July 25</s> August 29, 2023</li> -->
+                        <li>Author response due: August 1, 2023</li>
+                        <!-- <li>Author response due: <s>August 01</s> September 1, 2023</li> -->
+                        <li>Acceptance notification: August 5, 2023</li>
+                        <!-- <li>Acceptance notification: <s>August 05</s> September 05, 2023</li> -->
+                        <li>Camera ready due: September 5, 2023</li>
+                        <!-- <li>Camera ready due: <s>September 05</s> September 16, 2023</li> -->
+                        <li>Workshop: November 30, 2023</li>
+                    </ul>
+                    <h3 class="section-subheading">Overview</h3>
+                    <p>Recent years have seen a dramatic increase in applications of artificial intelligence, machine
+                        learning, and data mining to security and privacy problems. The use of AI and ML in
+                        security-sensitive domains, in which adversaries may attempt to mislead or evade intelligent
+                        machines, creates new frontiers for security research. The recent widespread adoption of deep
+                        learning techniques, whose security properties are difficult to reason about directly, has only
+                        added to the importance of this research. The AISec workshop, now in its 15th year, is the
+                        leading venue for presenting and discussing new developments in the intersection of security and
+                        privacy with AI and machine learning.</p>
+                    <h3 class="section-subheading">Topics of Interest</h3>
+                    <p>Topics of interest include (but are not limited to):</p>
+
+                    <p>Theoretical topics related to security</p>
+                    <ul>
+                        <li>Adversarial learning</li>
+                        <li>Security of deep learning systems</li>
+                        <li>Robust statistics</li>
+                        <li>Learning in games</li>
+                        <li>Economics of security</li>
+                        <li>Differential privacy</li>
+                    </ul>
+
+                    <p>Security applications</p>
+                    <ul>
+                        <li>Computer forensics</l1>
+                        <li>Spam detection</li>
+                        <li>Phishing detection and prevention</li>
+                        <li>Botnet detection</li>
+                        <li>Intrusion detection and response</li>
+                        <li>Malware identification and analysis</li>
+                        <li>Data anonymization/de-anonymization</li>
+                        <li>Security in social networks</li>
+                        <li>Big data analytics for security</li>
+                        <li>User authentication</li>
+                    </ul>
+
+                    <p>Security-related AI problems
+                    <p>
+                    <ul>
+                        <li>Distributed inference and decision making for security</li>
+                        <li>Secure multiparty computation and cryptographic approaches</li>
+                        <li>Privacy-preserving data mining</li>
+                        <li>Adaptive side-channel attacks</li>
+                        <li>Design and analysis of CAPTCHAs</li>
+                        <li>AI approaches to trust and reputation</li>
+                        <li>Vulnerability testing through intelligent probing (e.g. fuzzing)</li>
+                        <li>Content-driven security policy management & access control</li>
+                        <li>Techniques and methods for generating training and test sets</li>
+                        <li>Anomalous behavior detection (e.g. for the purpose of fraud detection)</li>
+                        <li>Model confidentiality</li>
+                    </ul>
+
+
+
+                    <h3 class="section-subheading">Submission Guidelines</h3>
+                    <p>We invite the following types of papers:
+                    <ul>
+                        <li><b>Original research papers</b> on any topic in the intersection of AI or machine learning
+                            with security, privacy, or related areas.</li>
+                        <li><b>Position and open-problem papers</b> discussing the relationship of AI or machine
+                            learning to security or privacy. Submitted papers of this type may not substantially overlap
+                            with papers that have been published previously or that are simultaneously submitted to a
+                            journal or conference/workshop proceedings.</li>
+                        <li><b>Systematization-of-knowledge papers</b>, which should distill the AI or machine learning
+                            contributions of a previously-published series of security papers.</li>
+                    </ul>
+                    </p>
+                    <p>The authors can specify the paper type in the submission form. Paper submissions must be at most
+                        10 pages in double-column ACM format, excluding the bibliography and well-marked appendices, and
+                        at most 12 pages overall.
+                        Papers should be in LaTeX and we recommend using the ACM format. This format is required for the
+                        camera-ready version. Please follow the main CCS formatting instructions (except with page
+                        limits as described above). In particular, we recommend using the sigconf template, which can be
+                        downloaded from <a href="https://www.acm.org/publications/proceedings-template"
+                            target="_blank">https://www.acm.org/publications/proceedings-template</a>. Accepted papers
+                        will be published by the ACM Digital Library and/or ACM Press. Committee members are not
+                        required to read the appendices, so the paper should be intelligible without them.
+                        <u>Submissions must be in English and properly anonymized.</u></p>
+                    <h3 class="section-subheading">Submission Site</h3>
+                    <p>Submission link: <a href="https://aisec2023.hotcrp.com"
+                            target="_blank">https://aisec2023.hotcrp.com</a>.</p>
+                    <p>All accepted submissions will be presented at the workshop and included in the ACM workshop
+                        proceedings.</p>
+                    <p>One author of each accepted paper is required to attend the workshop and present the paper for
+                        it to be included in the proceedings. 
+                        <!-- NB: They do not have to attend the workshop in person.
+                        They can present their paper remotely. -->
+                    </p>
+
+                    <p>For any questions, please contact one the workshop organizers at <a
+                            href="mailto:maura.pintor@unica.it">maura.pintor@unica.it</a></p>
+
+                    <!--
+                    <p>For any questions, please contact the workshop organizers at <a href=
+                    "mailto:dls2019@sec.tu-bs.de">dls@sec.tu-bs.de</a></p>
+                    <h3 class="section-subheading">Presentation Form</h3>
+                    <p>All accepted submissions will be presented at the workshop and included in the ACM workshop
+                    proceedings. Due to time constraints, accepted papers will be selected for presentation as either
+                    talk or poster based on their review score and novelty. Nonetheless, all accepted papers should be
+                    considered as having equal importance.</p>
+                    <p>One author of each accepted paper is required to attend the workshop and present the paper for
+                    it to be included in the proceedings.</p>
+                    <h3 class="section-subheading">Submission Site</h3>
+                    <p>Submissions should be made online at <a target="_blank" href=
+                    "https://dls2019.sec.tu-bs.de">https://dls2019.sec.tu-bs.de</a>.</p> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    </section><!-- award -->
+    <section id="award">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-justify">
+                    <h2 class="section-heading text-uppercase">Best Paper Award</h2>
+                    <!-- <h3 class="section-subheading">Best Paper Award</h3> -->
+                    <p>As in the previous editions of this workshop, we would honor outstanding contributions.
+                        To this end, we will award the best paper. The best paper will be selected by the reviewers
+                        among all the submitted papers.</p>
+
+                    <p>In the previous edition, <b>Tom Ganz</b>, <b>Martin Härterich</b> (SAP Security Research);
+                        <b>Alexander Warnecke</b>, <b>Konrad Rieck</b> (TU Braunschweig) were awarded the 2021 AISec
+                        Best Paper Award for their work on “<b>Explaining Graph Neural Networks for Vulnerability
+                            Discovery</b>”.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Committee -->
+    <section id="committee" class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-left">
+                    <h2 class="section-heading text-uppercase">Committee</h2>
+                    <h3 class="section-subheading">Workshop Chairs</h3>
+                    <ul class="noindent">
+                        <li><a href="https://maurapintor.github.io/" target="_blank">Maura Pintor</a>,
+                            University of Cagliari, Italy</li>
+                        <li><a href="https://jungyhuk.github.io/" target="_blank">Xinyun Chen</a>, Google Brain, USA
+                        </li>
+                        <li><a href="https://floriantramer.com/" target="_blank">Florian Tramèr</a>, ETH Zürich,
+                            Switzerland</li>
+                    </ul>
+                    <h3 class="section-subheading">Steering Committee</h3>
+                    <ul class="noindent">
+                        <li>
+                            <a href="http://theory.stanford.edu/~dfreeman/" target="_blank">David Freeman</a>, Facebook,
+                            Inc.
+                        </li>
+                        <li>
+                            <a href="https://cis.unimelb.edu.au/people/staff.php?person_ID=20074/"
+                                target="_blank">Benjamin Rubinstein</a>, University of Melbourne
+                        </li>
+                        <li><a href="https://pralab.diee.unica.it/en/BattistaBiggio/" target="_blank">Battista
+                                Biggio</a>, University of Cagliari & PluribusOne</li>
+                    </ul>
+                    <h3 class="section-subheading">Program Committee</h3>
+                    The program commitee will be announced soon.
+                    <!-- <ul class="noindent" <li>Arjun Nitin Bhagoji Bhagoji, University of Chicago</li>
+                        <li>Armin Wasicek, Avast Inc / Technical University Vienna</li>
+                        <li>Benjamin Ampel, The University of Arizona</li>
+                        <li>Bobby Filar, Sublime Security</li>
+                        <li>Brad Miller, Google</li>
+                        <li>Chawin Sitawarin, University of California</li>
+                        <li>Christian Wressnegger, Karlsruhe Institute of Technology</li>
+                        <li>Christos Dimitrakakis, University of Oslo</li>
+                        <li>Clarence Chio, UC Berkley</li>
+                        <li>Daniel Arp, Technische Universität Braunschweig</li>
+                        <li>Daniel Lowd, University of Oregon</li>
+                        <li>Davide Maiorca, University of Cagliari</li>
+                        <li>Eric Wong, MIT</li>
+                        <li>Erwin Quiring, Ruhr-Universität Bochum</li>
+                        <li>Fabio Pierazzi, King's College London</li>
+                        <li>Feargus Pendlebury, King’s College London and ICSI; UC Berkeley</li>
+                        <li>Giovanni Apruzzese, University of Liechtenstein</li>
+                        <li>Guillermo Suarez-Tangil, IMDEA Networks Institute and King’s College London</li>
+                        <li>Hyrum Anderson, Microsoft
+                        <li>
+                        <li>Ilia Shumailov, University of Cambridge</li>
+                        <li>Kexin Pei, Columbia University</li>
+                        <li>Konrad Rieck, TU Braunschweig</li>
+                        <li>Lei Ma, University of Alberta</li>
+                        <li>Luca Demetrio, University of Cagliari</li>
+                        <li>Luis Muñoz-González, Imperial College London</li>
+                        <li>Markus Duermuth, Leibniz University Hannover</li>
+                        <li>Matthew Jagielski, Northeastern University</li>
+                        <li>Matthew Mirman, ETH</li>
+                        <li>Maura Pintor, University of Cagliari</li>
+                        <li>Milenko Drinic, Microsoft</li>
+                        <li>Pavel Laskov, University of Liechtenstein</li>
+                        <li>Sadia Afroz, ICSI/Avast</li>
+                        <li>Sagar Samtani, Indiana University</li>
+                        <li>Sam Bretheim, Craigslist</li>
+                        <li>Sanghyun Hong, Oregon State University</li>
+                        <li>Scott Coull, FireEye</li>
+                        <li>Shawn Shan, University of Chicago</li>
+                        <li>Shiqi Wang, Columbia University</li>
+                        <li>Stefano Traverso, Ermes</li>
+                        <li>Tianhao Wang, Caniege Mellon University</li>
+                        <li>Weilin Xu, Intel Labs</li>
+                        <li>Wenbo Guo, Purdue University</li>
+                        <li>Yang Zhang, CISPA Helmholtz Center for Information Security</li>
+                        <li>Yevgeniy Vorobeychik, Washington University in St. Louis</li> -->
+                </div>
+            </div>
+        </div>
+
+    </section><!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <span class="copyright">Copyright © AISec 2023</span><br>
+                </div>
+                <div class="col-md-6">
+                    Support kindly provided by the <a href="https://www.unica.it/unica/en/homepage.page/"
+                        target="_blank">University of Cagliari</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <!-- <script src="js/agency.min.js"></script> -->
+</body>
+
+</html>
