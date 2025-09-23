@@ -133,79 +133,69 @@
                 <div class="row">
                     <div class="col-lg-3">
                         <center>
-                            <img src="img/alina.jpg" class="portait">
+                            <img src="img/nicole.jpg" class="portait">
                         </center>
                     </div>
                     <div class="col-lg-9 text-justify">
                         <h3 class="section-subheading">
-                            <b>Title: On the Security and Privacy Risks of Generative AI Systems</b>
+                            <b>Title: Achieving a Secure AI Agent Ecosystem</b>
                         </h3>
                         <details>
                             <summary>
-                                <b>Alina Oprea, Professor @ Northeastern University</b>
+                                <b>Nicole Nichols, Distinguished Engineer @ Palo Alto Networks</b>
                             </summary>
-                            <p>Alina Oprea is a Professor at Northeastern University in the Khoury College of Computer Sciences. She joined Northeastern University in Fall 2016 after spending 9 years as a research scientist at RSA Laboratories. Her research interests in cyber security are broad, with a focus on AI security and privacy, ML-based threat detection, cloud security, and applied cryptography. She is the recipient of the Technology Review TR35 award for her research in cloud security in 2011, the Google Security and Privacy Award in 2019, the Ruth and Joel Spira Award for Excellence in Teaching in 2020, and the CMU Cylab Distinguished Alumni Award in 2024. Alina served as Program Committee co-chair of the flagship cyber security conference, the IEEE Security and Privacy Symposium in 2020 and 2021. She also served as Associate Editor of the ACM Transactions of Privacy and Security( TOPS) journal and the IEEE Security and Privacy Magazine. Her work was recognized with Best Paper Awards at NDSS 2005, AISEC in 2017, and GameSec in 2019..</p>
+                            <p>Nicole Nichols is a Distinguished Engineer in Machine Learning Security at Palo Alto Networks. She previously held senior roles at Apple, Microsoft and has contributed to both academia and industry advancements in adversarial machine learning and security. She has published at numerous ACM, IEEE, and CVPR workshops, and was co-chair of ICML-ML4Cyber workshop. She has a PhD in Electrical Engineering from the University of Washington.</p>
                         </details>
                         <p>
-                            In the last few years, we have seen tremendous progress on the capabilities of generative AI and large language models (LLMs). As model sizes have reached hundreds of billions of parameters, training models from scratch has become infeasible. Consequently, system developers typically leverage pre-trained LLMs, and later fine-tune them or augment them with external content to specialize them to new tasks. In this talk, we pose the question if these complex LLM deployment pipelines introduce new security and privacy risks for users. We discuss a new privacy attack on fine-tuned LLMs and a new poisoning attack for LLMs utilizing Retriever Augmented Generation (RAG). We also discuss the challenges of developing mitigations and highlight several open problems in securing AI systems.
+                            AI agent systems, capable of complex planning and autonomous action in real world environments, present profound and novel cybersecurity challenges. Current cybersecurity paradigms are too brittle to address the unique vulnerabilities stemming from dynamic generative agents with opaque interpretability, new protocols connecting tools and data, and the unpredictable dynamics of multi agent interactions. Prior work has identified a range of security gaps in AI agents. However, it is essential to move beyond reiterating concerns and toward a collaborative, action oriented agenda to mitigate these risks. An international group of leading industrial and academic researchers were gathered by Schmidt Sciences, RAND, and Palo Alto Networks, to contextualize the fragmented cross domain expertise and insights needed to produce solutions that reflect the full landscape interconnected challenges that uniquely arise in the setting of LLM driven AI Agents. This report distills the collective insights from this gathering and contributes: 1. A flexible definition of the functional properties of AI agents 2. Description of how these AI agent properties create novel implications for security. 3. An open roadmap to producing interconnected comprehensive solutions.
                         </p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-3">
                         <center>
-                            <img src="img/lea.jpg" class="portait">
+                            <img src="img/eugene.jpg" class="portait">
                         </center>
                     </div>
                     <div class="col-lg-9 text-justify">
                         <h3 class="section-subheading">
-                            <b>Title: Challenges and Threats in Generative AI: Misuse and Exploits</b>
+                            <b>Title: Context Rules! Privacy and Security for Future Trustworthy AI Agents</b>
                         </h3>
                         <details>
                             <summary>
-                                <b>Lea Schönherr, Tenure-track Faculty @ CISPA Helmholtz Center for Information Security</b>
+                                <b>Eugene Bagdasarian, Assistant Professor @ University of Massachusetts Amherst, Researcher @ Google</b>
                             </summary>
                             <p>
-                                Lea Schönherr is a tenure-track faculty at CISPA Helmholtz Center for Information Security since 2022. Her research focuses on information security, particularly adversarial machine learning, trustworthy generative AI, and ML security applications. She is especially interested in language as an interface to machine learning models, including their cognitive representations and code generation with LLMs. She has published several papers on threat detection and defense of speech recognition systems, generative models, and preventing the misuse of generative AI. She obtained her PhD from Ruhr-Universität Bochum, Germany, in 2021 and is a recipient of two fellowships from UbiCrypt (DFG Graduate School) and Casa (DFG Cluster of Excellence).
+                                Eugene Bagdasarian is an Assistant Professor at University of Massachusetts Amherst and a Researcher at Google. His work focuses on studying attack vectors in AI systems deployed in real life and proposing new designs that mitigate these attacks. Previously, he received the Distinguished Paper Award at USENIX Security and Apple AI/ML PhD Fellowship.
                             </p>
                             <br>
                         </details>
                         <p>
-                            Generative AI (genAI) is becoming more integrated into our daily lives, raising questions about potential threats within genAI systems and their outputs. In this talk, we will examine the resulting challenges and security threats associated with generative AI.
-
-                            In the first part of the talk, we look at threat scenarios in which generative models are utilized to produce content that is impossible to distinguish from human-generated content. This fake content is often used for fraudulent and manipulative purposes. As generative models evolve, the attacks are easier to automate and require less expertise, while detecting such activities will become increasingly difficult. This talk will provide an overview of our current challenges in detecting fake media in human and machine interactions.
-                            
-                            The second part will cover exploits of LLMs to disrupt alignment or to steal sensitive information. Existing attacks show that content filters of LLMs can be easily bypassed with specific inputs and that private information can be leaked. Also, established methods in the adversarial machine learning field cannot be easily transferred to generative models. From an alternative perspective, we show that an alternative way to protect intellectual property is by obfuscating prompts. We demonstrate that with only some overhead, we can achieve similar utility while protecting confidential data.
-                            
-                            The final part of the presentation will discuss the use of generative models in security applications. This includes benchmarking and fixing vulnerable code and understanding these models' capabilities by investigating their code deobfuscation abilities.
+                            New AI agents integrate with complex systems and users’ data, thus opening new attack vectors. Worse, security designs struggle with the versatility of agents: booking a trip requires different controls than responding to an email. In this talk, I propose to ground agentic privacy and security in the theory of Contextual Integrity, which defines privacy as appropriate information flows under contextual norms. We use language models to infer the current trusted context and synthesize restrictions on tools and data, then develop a policy engine to deterministically enforce them, helping to isolate attacks that abuse agentic capabilities and data access. While promising, this design raises new questions: from establishing trusted context and improving policy generation to collecting social norms and resolving context ambiguity.
                         </p>
-                        <a href="media/aisec_schoenherr.pdf">Slides</a>
-                        <p></p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-3">
                         <center>
-                            <img src="img/giovanni.jpg" class="portait">
+                            <img src="img/katherine.jpg" class="portait">
                         </center>
                     </div>
                     <div class="col-lg-9 text-justify">
                         <h3 class="section-subheading">
-                            <b>Title: A threat-centric look at Privacy-Preserving Machine Learning</b>
+                            <b>Title: TBD</b>
                         </h3>
                         <details>
                             <summary>
-                                <b>Giovanni Cherubin, Senior Researcher @ Microsoft</b>
+                                <b>Katherine Lee, Researcher @ OpenAI</b>
                             </summary>
                             <p>
-                                Giovanni Cherubin is a Senior Researcher at Microsoft in Cambridge, working with the Microsoft Security Response Centre (MSRC). Before joining Microsoft, Giovanni held research positions at the Alan Turing Institute and EPFL. He obtained a PhD in Machine Learning and Cyber Security from Royal Holloway University of London. His research focuses on the privacy and security properties of machine learning models, as well as the theoretical and empirical study of their information leakage. Additionally, Giovanni works on distribution-free uncertainty estimation for machine learning, such as Conformal Prediction. He has received multiple awards for his contributions to security, privacy, and distribution-free inference.
+                                Katherine is a researcher at OpenAI. Her work has provided essential empirical evidence and measurement for grounding discussions around concerns that language models infringe copyright, and about how language models can respect an individuals’ right to privacy and control of their data. Additionally, she has developed large language models (T5), developed methods of reducing memorization, and studied the impact of data curation on model development. Her work has been highly awarded at venues like: NeurIPS, ICML, ICLR, and USENIX.
                             </p>
                         </details>
                         <p>
-                            Privacy-preserving Machine Learning (PPML) has the rare privilege among security research fields of having defences that are both practical and theoretically robust, thanks to over 20 years of progress. However, deployment of these defenses often sparks heated debates over how to tune their parameters. This is partially because these defences are typically designed to counter "any" attack, which can lead to overlooking the specific threats relevant to a particular deployment. 
-                            This talk will cover the key advancements in PPML research through the principle of "first consider the threats, then pick a defence." By deliberately defining which attacks we consider to be a threat (and which ones we don't) before deploying a model, we can more effectively select concrete parameters for our defences, and better communicate the extent and limitations of the protection we've achieved.
+                            Abstract To Be Announced
                         </p>
-                        <p></p>
                     </div>
                 </div>
             </div>
