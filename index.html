@@ -540,7 +540,7 @@
                     <ul>
                         <li>
                             Paper submission deadline:
-                            July 25th, 2026 (firm)
+                            <b>July 25th, 2026 (firm)</b> [<span id="countdown"></span> to go]
                         </li>
                         <li>
                             Reviews due:
@@ -648,12 +648,13 @@
                                         <b>[NEW] Benchmark papers</b> proposing a new benchmark in the context of AI/ML and security/privacy. (Note: artifact sharing at submission time is <i>required</i> for papers in this category.)
                                     </li>
                                 </ul>
+                                The authors can specify the paper type in the submission form. We encourage authors to share their artifacts at submission time by providing a link to an (anonymous) repository. We also endorse authors to reflect on the ethical implications of their research, which can be discussed in the paper in a dedicated section or paragraph.
                             </p>
                             <p>
                                 <b>Papers not following the following guidelines will be desk-rejected.</b>
                                 <u>Submissions must be in English and properly anonymized.</u> Ensure that there is no way to identify authors, including, e.g., when linking code repositories (consider using <a href="https://anonymous.4open.science/" target="_blank">anonymous.4open.science</a>), when referencing prior work of the same authors, or in the header of the pages.
-                                The papers should be at most 10 pages long in double-column ACM format, excluding the bibliography and well-marked appendices, and at most 12 pages overall. Committee members are not required to read appendices, so the paper should be intelligible without them. Papers must be submitted as PDF files, and must strictly comply with the ACM format.  We point the authors to the main ACM CCS'26 formatting instructions (except with page limits as described above), which can be found <a href="https://www.sigsac.org/ccs/CCS2026/call-for/call-for-papers.html" target="_blank">here</a>. Submitted papers must also comply with the "Use of Generative AI" policy described below.
-                                The authors can specify the paper type in the submission form. Accepted papers will be published in the ACM Digital Library and/or ACM Press.
+                                The papers should be at most 10 pages long in double-column ACM format, excluding the bibliography and well-marked appendices, and at most 12 pages overall. Committee members are not required to read appendices, so the paper should be intelligible without them. Papers must be submitted as PDF files, and must strictly comply with the ACM format.  We point the authors to the main ACM CCS'26 formatting instructions (except with page limits as described above), which can be found <a href="https://www.sigsac.org/ccs/CCS2026/call-for/call-for-papers.html" target="_blank">here</a>. Benchmark papers without a valid (and functional) link to a resource containing the benchmark will be rejected. Submitted papers must also comply with the "Use of Generative AI" policy described below.
+                                Accepted papers will be published in the ACM Digital Library and/or ACM Press.
                             </p>
 
                             <p>
@@ -784,5 +785,33 @@
                 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
                 <script src="js/agency.min.js"></script>
+
+                <script>
+                  // AoE July 25 23:59 = July 26 11:59 UTC
+                  const deadline = new Date(Date.UTC(2026, 6, 26, 11, 59, 0));
+                  // Month is 0-based: 6 = July
+
+                  function updateCountdown() {
+                    const now = new Date();
+                    const diff = deadline - now;
+
+                    if (diff <= 0) {
+                      document.getElementById("countdown").innerHTML = "Deadline reached!";
+                      clearInterval(timer);
+                      return;
+                    }
+
+                    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                    const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+                    const minutes = Math.floor((diff / (1000 * 60)) % 60);
+                    const seconds = Math.floor((diff / 1000) % 60);
+
+                    document.getElementById("countdown").innerHTML =
+                      `${days}d ${hours}h ${minutes}m ${seconds}s`;
+                  }
+
+                  const timer = setInterval(updateCountdown, 1000);
+                  updateCountdown();
+                </script>
             </body>
         </html>
