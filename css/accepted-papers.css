@@ -92,3 +92,28 @@
     #accepted .ap-paper { break-inside: avoid; }
     #accepted .ap-paper-list { overflow: visible; }
 }
+
+#accepted .ap-type {
+    display: inline-block;
+    margin-left: 7px;
+    padding: 3px 7px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 9px;
+    font-weight: 700;
+    line-height: 1.4;
+    vertical-align: 2px;
+    white-space: nowrap;
+}
+
+#accepted .ap-type-research {
+    background-color: #2457a7;
+}
+
+#accepted .ap-type-benchmark {
+    background-color: #246b45;
+}
+
+#accepted .ap-type-position {
+    background-color: #7045a1;
+}
