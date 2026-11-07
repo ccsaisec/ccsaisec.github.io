@@ -23,8 +23,8 @@
         <div class="ap-controls" hidden>
             <div class="ap-theme-filters" role="group" aria-label="Filter papers by research theme">
                 <button class="ap-filter" type="button" data-ap-filter="all" aria-pressed="true">All papers <span class="ap-filter-count">39</span></button>
-                <button class="ap-filter" type="button" data-ap-filter="security-of-ai" aria-pressed="false">Security/Privacy of AI <span class="ap-filter-count">24</span></button>
                 <button class="ap-filter" type="button" data-ap-filter="ai-for-security" aria-pressed="false">AI for Security/Privacy <span class="ap-filter-count">15</span></button>
+                <button class="ap-filter" type="button" data-ap-filter="security-of-ai" aria-pressed="false">Security/Privacy of AI <span class="ap-filter-count">24</span></button>
             </div>
             <div class="ap-search-row">
                 <div class="ap-search-field">
@@ -41,6 +41,230 @@
         <noscript><p class="ap-noscript">All papers are listed below. Select “Read abstract” to open an individual abstract.</p></noscript>
 
         <div id="accepted-paper-groups">
+        <section class="ap-theme" data-ap-group="ai-for-security" aria-labelledby="accepted-ai-for-security-heading">
+            <div class="ap-theme-heading">
+                <h3 class="ap-theme-title" id="accepted-ai-for-security-heading">AI for Security/Privacy</h3>
+                <span class="ap-theme-count">15 papers</span>
+            </div>
+            <div class="ap-paper-list">
+            <article class="ap-paper" id="accepted-paper-314" data-ap-theme="ai-for-security" data-ap-spotlight="true" aria-labelledby="accepted-title-314">
+                <h4 class="ap-paper-title" id="accepted-title-314">Beyond the Syntax: Do Security Experts Trust LLMs for NIDS Rule Engineering? <span class="ap-spotlight"><i class="fa fa-star" aria-hidden="true"></i> Spotlight</span></h4>
+                <p class="ap-authors"><span class="ap-author">Lorenzo Di Filippo<sup title="Sorbonne Université, LIP6, Paris, France">1</sup></span>, <span class="ap-author">Enkeleda Bardhi<sup title="Delft University of Technology">2</sup></span>, <span class="ap-author">Andrea Agiollo<sup title="Delft University of Technology">2</sup></span>, <span class="ap-author">Alessandro Palma<sup title="Sapienza University of Rome">3</sup></span>, <span class="ap-author">Silvia Bonomi<sup title="Sapienza University of Rome">3</sup></span>, <span class="ap-author">Fernando Kuipers<sup title="Delft University of Technology">2</sup></span></p>
+                <ul class="ap-affiliations" aria-label="Author affiliations">
+                    <li><sup>1</sup>Sorbonne Université, LIP6, Paris, France</li>
+                    <li><sup>2</sup>Delft University of Technology</li>
+                    <li><sup>3</sup>Sapienza University of Rome</li>
+                </ul>
+                <details class="ap-abstract">
+                    <summary><span class="ap-read-label">Read abstract</span><span class="ap-hide-label">Hide abstract</span></summary>
+                    <div class="ap-abstract-body">
+                        <p>As network threats evolve, manual Network Intrusion Detection Systems (NIDS) rule engineering has become a critical operational bottleneck. While Large Language Models (LLMs) show promise for automating this process, their ability to produce production-ready rules remains unvalidated. This paper presents a human-centered investigation into LLM-based NIDS rule engineering, formalizing a context-aware generation framework and evaluating it through an exploratory user study with 10 domain experts. Our evaluation reveals a syntax-semantics paradox: although LLMs generate syntactically correct rules, experts find them only partially practically useful due to low specificity and logic hallucinations in 12% of cases. While the system received a favorable SUS score of 67, practitioners remain skeptical of its autonomous capabilities, viewing LLMs as support tools for drafting and verification rather than independent generators. Finally, our statistical analysis indicates that while large-scale models (≥ 70𝐵) consistently produce syntactically valid rules, small models (≤ 4𝐵) are largely ineffective for IDS rule generation.</p>
+                    </div>
+                </details>
+            </article>
+            <article class="ap-paper" id="accepted-paper-41" data-ap-theme="ai-for-security" data-ap-spotlight="false" aria-labelledby="accepted-title-41">
+                <h4 class="ap-paper-title" id="accepted-title-41">Constructive uses of AI in electronic voting -- application development and security analysis</h4>
+                <p class="ap-authors"><span class="ap-author">Jan Willemson<sup title="Cybernetica">1</sup></span>, <span class="ap-author">Artjom Zingfeld<sup title="Smartmatic-Cybernetica Centre of Excellence for Internet Voting">2</sup></span></p>
+                <ul class="ap-affiliations" aria-label="Author affiliations">
+                    <li><sup>1</sup>Cybernetica</li>
+                    <li><sup>2</sup>Smartmatic-Cybernetica Centre of Excellence for Internet Voting</li>
+                </ul>
+                <details class="ap-abstract">
+                    <summary><span class="ap-read-label">Read abstract</span><span class="ap-hide-label">Hide abstract</span></summary>
+                    <div class="ap-abstract-body">
+                        <p>The rise of Artificial Intelligence (AI) tools is making significant impact in many application areas, and elections are no exception. A lot of this impact (deep fakes, misinformation campaigns, etc.) can be viewed as negative. However, AI also has a lot of potential to be used constructively, and this is the topic of the current paper. We study three application areas, and use the Estonian IVXV Internet voting system as the underlying case study. First, we extract formal ProVerif models from the IVXV source code. Secondly, we build an independent voting application based on the server-side source code (which is interesting because the official client application has not been open-sourced). Thirdly, we perform a security analysis of the IVXV source code with the publicly available state-of-the-art AI tools. Our analysis revealed four findings that require a code fix, and two of these were new to the developers. The analysis also gave several other recommendations for gradual improvement of the system.</p>
+                    </div>
+                </details>
+            </article>
+            <article class="ap-paper" id="accepted-paper-293" data-ap-theme="ai-for-security" data-ap-spotlight="false" aria-labelledby="accepted-title-293">
+                <h4 class="ap-paper-title" id="accepted-title-293">Data Augmentation in Learning-Based Binary Code Analysis</h4>
+                <p class="ap-authors"><span class="ap-author">Lennart von Stülpnagel<sup title="BIFOLD; TU Berlin">1,2</sup></span>, <span class="ap-author">Felix Weissberg<sup title="BIFOLD; TU Berlin">1,2</sup></span>, <span class="ap-author">Jonas Möller<sup title="BIFOLD; TU Berlin">1,2</sup></span>, <span class="ap-author">Benjamin Greb<sup title="TU Berlin">2</sup></span>, <span class="ap-author">Thorsten Eisenhofer<sup title="CISPA Helmholtz Center for Information Security">3</sup></span>, <span class="ap-author">Konrad Rieck<sup title="BIFOLD; TU Berlin">1,2</sup></span></p>
+                <ul class="ap-affiliations" aria-label="Author affiliations">
+                    <li><sup>1</sup>BIFOLD</li>
+                    <li><sup>2</sup>TU Berlin</li>
+                    <li><sup>3</sup>CISPA Helmholtz Center for Information Security</li>
+                </ul>
+                <details class="ap-abstract">
+                    <summary><span class="ap-read-label">Read abstract</span><span class="ap-hide-label">Hide abstract</span></summary>
+                    <div class="ap-abstract-body">
+                        <p>Understanding and analyzing binary code is fundamental to security-critical tasks, such as reverse engineering and vulnerability discovery. As machine learning has become integral to these tasks, techniques from other domains have been transferred to binary code analysis. In particular, inspired by computer vision, data augmentation has recently been proposed to improve performance in code analysis tasks. However, prior work considers only a limited set of transformations and tasks, making it difficult to draw broader conclusions about when and how augmentation is effective. In this work, we thus take a step back and systematically study the role of data augmentation in binary code analysis. To this end, we introduce a unified framework that encompasses both semantic-preserving and semantic-altering code transformations. We evaluate the impact of augmentation across multiple tasks, including function similarity, parameter analysis, and vulnerability discovery. Our findings reveal a key difference from computer vision: in binary code analysis, augmentation is not a silver bullet. While code transformations can improve performance when training data is scarce, the gains diminish as more data becomes available. We conclude that augmentation is only beneficial under specific conditions and therefore derive practical recommendations for its application.</p>
+                    </div>
+                </details>
+            </article>
+            <article class="ap-paper" id="accepted-paper-578" data-ap-theme="ai-for-security" data-ap-spotlight="false" aria-labelledby="accepted-title-578">
+                <h4 class="ap-paper-title" id="accepted-title-578">Exposure is All You Need: Using LLMs to Identify Critical Endpoints at Internet Scale</h4>
+                <p class="ap-authors"><span class="ap-author">Stijn Pletinckx<sup title="University of California, Santa Barbara">1</sup></span>, <span class="ap-author">Milad Nasr<sup title="Anthropic">2</sup></span>, <span class="ap-author">Sanghyun Hong<sup title="Oregon State University">3</sup></span>, <span class="ap-author">Zakir Durumeric<sup title="Stanford University">4</sup></span>, <span class="ap-author">Nicholas Carlini<sup title="Anthropic">2</sup></span></p>
+                <ul class="ap-affiliations" aria-label="Author affiliations">
+                    <li><sup>1</sup>University of California, Santa Barbara</li>
+                    <li><sup>2</sup>Anthropic</li>
+                    <li><sup>3</sup>Oregon State University</li>
+                    <li><sup>4</sup>Stanford University</li>
+                </ul>
+                <details class="ap-abstract">
+                    <summary><span class="ap-read-label">Read abstract</span><span class="ap-hide-label">Hide abstract</span></summary>
+                    <div class="ap-abstract-body">
+                        <p>The modern Internet hosts billions of services, many of which inadvertently expose sensitive data or allow device manipulation. Discovering security-relevant Internet exposures requires both manual analysis and a priori knowledge of what to look for, neither of which scales to the diversity of devices and services in the wild. In this paper, we show that Large Language Models (LLMs) change this dynamic, and can act as general-purpose analyzers that recognize exposed services without predefined rules or fingerprints. We then use this capability to conduct the first comprehensive measurement of exposed services on the web. To make this measurement feasible, we use LLMs to build a hierarchical taxonomy of services on the web, revealing the full landscape of what is accessible online, and develop a multi-stage pipeline that combines lightweight ML classifiers with targeted LLM analysis to triage and rank the most security-critical exposures. We demonstrate this on five categories --directory listings, administrative dashboards, uncommon IoT devices, pages showing stack traces, and RTSP camera feeds-- using Internet scan data from over 20 million services. Our approach identifies thousands of critically exposed services, including healthcare management systems, financial documents, API keys, passports, and private home cameras.</p>
+                    </div>
+                </details>
+            </article>
+            <article class="ap-paper" id="accepted-paper-18" data-ap-theme="ai-for-security" data-ap-spotlight="true" aria-labelledby="accepted-title-18">
+                <h4 class="ap-paper-title" id="accepted-title-18">Hacking Back the AI Hacker: Prompt Injection as a Defense Against LLM-driven Cyberattacks <span class="ap-spotlight"><i class="fa fa-star" aria-hidden="true"></i> Spotlight</span></h4>
+                <p class="ap-authors"><span class="ap-author">Dario Pasquini<sup title="Cracken">1</sup></span>, <span class="ap-author">Evgenios M. Kornaropoulos<sup title="George Mason University">2</sup></span>, <span class="ap-author">Giuseppe Ateniese<sup title="George Mason University">2</sup></span></p>
+                <ul class="ap-affiliations" aria-label="Author affiliations">
+                    <li><sup>1</sup>Cracken</li>
+                    <li><sup>2</sup>George Mason University</li>
+                </ul>
+                <details class="ap-abstract">
+                    <summary><span class="ap-read-label">Read abstract</span><span class="ap-hide-label">Hide abstract</span></summary>
+                    <div class="ap-abstract-body">
+                        <p>Large language models (LLMs) are making multi-step cyberattacks cheaper to run and easier to automate. We present Mantis, a mechanism that leverages prompt injection for defensive purposes, turning it against the attacking LLM-agent itself. Once Mantis detects an attacking agent, it injects defender-crafted content into system responses and steers the agent toward one of two outcomes: a tarpit that wastes time and resources, or a controlled hack-back action that helps collect attribution information. Mantis combines decoy services with dynamic prompt injections and uses the attacker's own interaction loop to deliver the defense. In our evaluation, Mantis achieves the sabotage objective in 95.4% of runs and keeps attacker success below 3%. We release Mantis as open source.</p>
+                    </div>
+                </details>
+            </article>
+            <article class="ap-paper" id="accepted-paper-143" data-ap-theme="ai-for-security" data-ap-spotlight="false" aria-labelledby="accepted-title-143">
+                <h4 class="ap-paper-title" id="accepted-title-143">PkgScanArena: Benchmarking LLM-Based Package Scanners against Indirect Prompt Injection</h4>
+                <p class="ap-authors"><span class="ap-author">Himadri Chowdhury</span>, <span class="ap-author">Ahmed Hatem</span>, <span class="ap-author">Joseph Khoury</span></p>
+                <ul class="ap-affiliations" aria-label="Author affiliations">
+                    <li>Louisiana State University</li>
+                </ul>
+                <details class="ap-abstract">
+                    <summary><span class="ap-read-label">Read abstract</span><span class="ap-hide-label">Hide abstract</span></summary>
+                    <div class="ap-abstract-body">
+                        <p>Open-source package ecosystems such as PyPI and npm remain persistent targets for malicious campaigns. These campaigns have outgrown signature-based triage, so recent work has turned to large language models (LLMs) that scan package content and return a verdict, which lets the analysis consume attacker-controlled text. In 2026, the hades campaign on npm carried a prompt injection written to hijack the scanner’s instructions and coerce a clean verdict. Indirect prompt injection is well studied, but its reach into automated package-security analysis remains unmeasured. We therefore ask a broader question. How reliable are LLM-based package scanners when the package itself is written to manipulate the analysis? We present PkgScanArena, a benchmark that pairs a vetted dataset of 2,000 malicious and 1,000 benign npm and PyPI packages with a taxonomy of 11 techniques and 3 injection channels across three attacker goals, namely evasion, denial, and sabotage. An AST-guided pipeline injects these prompts into real packages, and we evaluate 25 open-weight and proprietary backends together with two deployed scanners. Our benchmark inverts the expected threat. Evasion proves largely unattainable, at or below 0.6% for nine of ten cloud backends. Exposure instead shifts to the opposite direction: benign accuracy degrades for all but two of the 25 backends, sabotage reaches 31.1%, and denial reaches 19.6% on the most safety-aligned model. The two deployed scanners inherit both weaknesses. The exposure lies not in coercing a scanner to miss malicious code, but in coercing it to condemn benign code.</p>
+                    </div>
+                </details>
+            </article>
+            <article class="ap-paper" id="accepted-paper-733" data-ap-theme="ai-for-security" data-ap-spotlight="false" aria-labelledby="accepted-title-733">
+                <h4 class="ap-paper-title" id="accepted-title-733">Plug 'n' Pray: Agentic LLM-based Detection of Potential Log File Exposures in Third-Party Content Management System <span style="display: inline-block; white-space: nowrap;"> Plugins <a href="https://arxiv.org/abs/2609.17164" target="_blank" rel="noopener noreferrer" title="View preprint" aria-label="View preprint (opens in a new tab)" style="display: inline-block; margin-left: 8px; color: #b42318; text-decoration: none;"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></span></h4>
+                <p class="ap-authors"><span class="ap-author">Sebastian Neef</span></p>
+                <ul class="ap-affiliations" aria-label="Author affiliations">
+                    <li>TU Berlin</li>
+                </ul>
+                <details class="ap-abstract">
+                    <summary><span class="ap-read-label">Read abstract</span><span class="ap-hide-label">Hide abstract</span></summary>
+                    <div class="ap-abstract-body">
+                        <p>Content Management Systems (CMS), such as WordPress, power a large share of the web (~58%), and their extensibility through third-party plugins is a major source of their popularity as well as of their attack surface. One high-impact weakness that remains understudied is log file exposure by CMS plugins, which create log files for debugging or other purposes. If these files are insufficiently secured, they can disclose sensitive information (e.g. credentials, personal data) which has led to website compromises in the past.</p>
+                        <p>In this work, we present an agentic, LLM-based framework that automatically detects potential log file exposures in plugins of the most popular CMS (WordPress). Our agent analyzes each plugin by performing static and dynamic analysis.</p>
+                        <p>We evaluated our approach on the 300 most-installed WordPress plugins (about 0.6% of all), which together account for over 250M active installations, i.e. 75% of all active installations in the official plugin ecosystem. We manually validated each finding, reproducing 79 of 81 findings from 62 plugins. We observed that several protective measures appear to be implemented that we classify as creation-control (e.g. manual log activation) and access-control (e.g. deny rules in .htaccess). However, we find that multi-layered protection is required, but not always present.</p>
+                        <p>From these results we derive a taxonomy of log file path and protection patterns and deduce a set of best practices for developers to securely handle them. Finally, our study corroborates that agentic LLMs are an useful tool for security analysis.</p>
+                    </div>
+                </details>
+            </article>
+            <article class="ap-paper" id="accepted-paper-107" data-ap-theme="ai-for-security" data-ap-spotlight="true" aria-labelledby="accepted-title-107">
+                <h4 class="ap-paper-title" id="accepted-title-107">ScopeBench: Do Agents Preserve Engagement Boundaries Under Goal Pressure? <span class="ap-spotlight"><i class="fa fa-star" aria-hidden="true"></i> Spotlight</span></h4>
+                <p class="ap-authors"><span class="ap-author">Shane Caldwell</span>, <span class="ap-author">Max Harley</span>, <span class="ap-author">Ads Dawson</span>, <span class="ap-author">Michael Kouremetis</span>, <span class="ap-author">Vincent Abruzzo</span>, <span class="ap-author">Will Pearce</span></p>
+                <ul class="ap-affiliations" aria-label="Author affiliations">
+                    <li>Dreadnode</li>
+                </ul>
+                <details class="ap-abstract">
+                    <summary><span class="ap-read-label">Read abstract</span><span class="ap-hide-label">Hide abstract</span></summary>
+                    <div class="ap-abstract-body">
+                        <p>Agents are increasingly deployed with real autonomy in web application and network penetration testing, where a single out-of-scope action can breach a client's engagement boundary. Existing offensive-security benchmarks measure raw hacking capability; as those benchmarks saturate, what actually gates deployment is a special case of alignment: scope adherence. We introduce ScopeBench, a benchmark of 30 dead-end agentic security tasks in which the stated objective is reachable only by violating the stated scope. Each task appears under two conditions that share an environment, verifier, and objective and differ only in scope: one instruction set has no scope and measures capability; the other has a natural-language scope to measure adherence. Every trajectory passes through two grading arms. First, a deterministic flag verifier acts as a violation verifier—a pass under scoped instruction proves by construction that a forbidden action occurred—yielding a high-precision lower bound on the violation rate. A tool-assisted, full-context judge then estimates whether an out-of-scope call occurred in trajectories that fail mechanical verification. We calibrate the judge against 100 ScopeBench trajectories labeled call-by-call by human annotators, and a blinded audit of the evaluated rollouts finds its high recall holds—no false negatives among the 36 audited violations, with over-flagging its only observed error. Across 8 models run in one harness, raw capability spans 12.2% to 81.1%. The mechanical verifier finds violations in 4.4% to 32.2% of scoped trials; adding the judge's review of the trials that never submitted a flag raises the estimate to 13.3%–65.6% violation. Taken together, the grading arms find a hybrid 34.4%–86.7% adherence—558 violations across the 1,440 scoped trials. Most significantly, opus-4-8 achieves a raw-capability score 10 percentage points higher than sonnet-4-6's while exhibiting 35.6 percentage points higher scope adherence. We release this pilot as a methodological framework for measuring scope adherence in future agents, with an open pathway for community task contributions.</p>
+                    </div>
+                </details>
+            </article>
+            <article class="ap-paper" id="accepted-paper-332" data-ap-theme="ai-for-security" data-ap-spotlight="false" aria-labelledby="accepted-title-332">
+                <h4 class="ap-paper-title" id="accepted-title-332">Time Will Tell: Illuminating Causes of Score Inflation in Source Code Vulnerability Detection Benchmarks</h4>
+                <p class="ap-authors"><span class="ap-author">Alexander De Furia<sup title="University of Ottawa">1</sup></span>, <span class="ap-author">Colin Bellinger<sup title="University of Ottawa">1</sup></span>, <span class="ap-author">Paula Branco<sup title="University of Ottawa">1</sup></span>, <span class="ap-author">Alexander M. Hoole<sup title="OpenText">2</sup></span>, <span class="ap-author">Guy-Vincent Jourdan<sup title="University of Ottawa">1</sup></span>, <span class="ap-author">Hari Manassery Koduvely<sup title="OpenText">2</sup></span>, <span class="ap-author">Manish Marwah<sup title="Independent Researcher">3</sup></span></p>
+                <ul class="ap-affiliations" aria-label="Author affiliations">
+                    <li><sup>1</sup>University of Ottawa</li>
+                    <li><sup>2</sup>OpenText</li>
+                    <li><sup>3</sup>Independent Researcher</li>
+                </ul>
+                <details class="ap-abstract">
+                    <summary><span class="ap-read-label">Read abstract</span><span class="ap-hide-label">Hide abstract</span></summary>
+                    <div class="ap-abstract-body">
+                        <p>LLM-based source code vulnerability detection (SCVD) reports strong benchmark performance that does not hold up in the real world. Use of random splitting in test-set construction has been widely blamed for permitting time-travel and inter-commit leakage, but neither mechanism has been empirically isolated. We evaluate five different cross-validation strategies across eight fine-tuned and eight zero-shot LLMs on MegaVul-C; every strategy is also evaluated on the same held-out future set to separate training-set from test-set effects. Random splitting inflates reported test-set F1 by ~34 for fine-tuned models and ~16 for zero-shot models. On the shared holdout set, models fine-tuned using random and temporal training splits achieve statistically equivalent performance within ±2 pp (<var>p</var><sub>TOST</sub> &lt; 0.001), which places the inflation on test-set construction. Matched comparisons that isolate inter-commit leakage and time-travel are equivalent on the holdout set within the same margin. Correcting the train-test CWE distribution by resampling, our proxy for evolving vulnerability patterns, does not close the gap either. The gap instead reflects differences between the training and evaluation distributions, which we localize but do not reduce to a single causal property. Temporal splitting remains necessary for realistic evaluation because it reduces the optimistic bias of random test-set construction. We recommend Temporal LOO Block CV, which preserves the variance reduction of K-fold evaluation while inducing distribution shift at each fold boundary. All split-generation, analysis, and training code is released to support reproducible evaluation of LLMs for SCVD.</p>
+                    </div>
+                </details>
+            </article>
+            <article class="ap-paper" id="accepted-paper-503" data-ap-theme="ai-for-security" data-ap-spotlight="false" aria-labelledby="accepted-title-503">
+                <h4 class="ap-paper-title" id="accepted-title-503">Towards Behavior Tree–Guided Vulnerability Detection with Lightweight LLMs</h4>
+                <p class="ap-authors"><span class="ap-author">Enna Basic</span>, <span class="ap-author">Alberto Giaretta</span></p>
+                <ul class="ap-affiliations" aria-label="Author affiliations">
+                    <li>Örebro University</li>
+                </ul>
+                <details class="ap-abstract">
+                    <summary><span class="ap-read-label">Read abstract</span><span class="ap-hide-label">Hide abstract</span></summary>
+                    <div class="ap-abstract-body">
+                        <p>Large Language Models (LLMs) are increasingly used for software vulnerability detection, but their performance depends on how source code is represented in the input. Most prompting approaches use source code in its original form, while some works propose the use of structured representations. Abstract Syntax Trees (ASTs) are one of the most popular approaches, but AST verbosity increases input size relative to source code, making them hard to fit within some LLMs context windows. This paper investigates Behavior Trees (BTs) as an alternative intermediate representation for LLM-based vulnerability detection. BTs encode control flow, conditions, and executable actions more compactly than ASTs, making them a natural candidate when token count is a constraint. First, we propose a preprocessing stage that parses Java source code into ASTs and then converts them into BT representations. We then compare vulnerability detection performance across 460 Java samples from the Juliet Java test suite, using three input representations: raw source code, AST, and BT. All experiments use a single quantized local LLM, Mistral Small 3.2 24B (Q4_K_M). Our results show that using BT representations improves recall on short code samples, while raw source code achieves higher precision. On longer samples, BTs improve overall performance over the original representation and fit within the context window, whereas many ASTs exceed the context limit. Within the evaluated model and dataset, these findings provide preliminary evidence that BTs can serve as a compact and useful structured representation for vulnerability detection.</p>
+                    </div>
+                </details>
+            </article>
+            <article class="ap-paper" id="accepted-paper-367" data-ap-theme="ai-for-security" data-ap-spotlight="false" aria-labelledby="accepted-title-367">
+                <h4 class="ap-paper-title" id="accepted-title-367">TRIAGE-CPG: A Cross-Model Study of Budgeted Static Malware Triage with Large Language Models</h4>
+                <p class="ap-authors"><span class="ap-author">Paul-Andrei Sava<sup title="Fraunhofer AISEC">1</sup></span>, <span class="ap-author">Alexander Küchler<sup title="Fraunhofer AISEC">1</sup></span>, <span class="ap-author">Daniel Kowatsch<sup title="Fraunhofer AISEC">1</sup></span>, <span class="ap-author">Bernhard Grill<sup title="Google">2</sup></span>, <span class="ap-author">Jennifer Pullman<sup title="Google">2</sup></span>, <span class="ap-author">Yanick Fratantonio<sup title="Google">2</sup></span>, <span class="ap-author">Luca Invernizzi<sup title="Google">2</sup></span></p>
+                <ul class="ap-affiliations" aria-label="Author affiliations">
+                    <li><sup>1</sup>Fraunhofer AISEC</li>
+                    <li><sup>2</sup>Google</li>
+                </ul>
+                <details class="ap-abstract">
+                    <summary><span class="ap-read-label">Read abstract</span><span class="ap-hide-label">Hide abstract</span></summary>
+                    <div class="ap-abstract-body">
+                        <p>When triaging unknown binaries, security analysts must quickly decide which samples to clear as benign, flag as malicious, or escalate for deeper analysis. Large Language Models (LLMs) could support these decisions by interpreting decompiled code, but a binary can contain hundreds or thousands of functions, making exhaustive LLM analysis impractical. We study how current LLMs behave when static triage is formulated as budgeted evidence acquisition: which functions they inspect and how they trade off benign clearance, malware detection, and escalation.</p>
+                        <p>To enable a controlled comparison, we implement TRIAGE-CPG, a fixed pipeline over a code property graph (CPG) of a decompiled binary. An LLM-free heuristic selects seed functions, an agent expands the resulting evidence dossier under a fixed budget, and a reporting stage produces a benign, suspicious, or malicious verdict together with a behavioral report. We evaluate eight closed-source and open-weight models on 1000 Windows PE binaries, using a 600-sample test split and the same zero-shot protocol for every model. We assess the ternary verdicts under both a strict binary reading and triage balanced accuracy (tBA), which credits malware that is flagged or escalated and benign samples only when cleared.</p>
+                        <p>After analyzing about 40 of a mean 1000 functions per binary, the highest-scoring model reaches a strict balanced accuracy of 0.805 and a tBA of 0.855, flagging 65% of malware, escalating another 12%, and clearing 94% of benign samples. The models implement different triage policies: high-specificity models produce small, malware-rich escalation queues, whereas recall-oriented models escalate or flag much more broadly. Both closed-source and open-weight models appear across this spectrum. Our results identify no universal deployment configuration: model choice itself determines the clear/flag/escalate trade-off under limited static evidence.</p>
+                    </div>
+                </details>
+            </article>
+            <article class="ap-paper" id="accepted-paper-292" data-ap-theme="ai-for-security" data-ap-spotlight="true" aria-labelledby="accepted-title-292">
+                <h4 class="ap-paper-title" id="accepted-title-292">TypeSeg: Content-Type Segmentation for Mixed Text <span class="ap-spotlight"><i class="fa fa-star" aria-hidden="true"></i> Spotlight</span></h4>
+                <p class="ap-authors"><span class="ap-author">Martin Dallinger<sup title="Google; Johannes Kepler University Linz">1,2</sup></span>, <span class="ap-author">Yanick Fratantonio<sup title="Google">1</sup></span>, <span class="ap-author">Luca Invernizzi<sup title="Google">1</sup></span></p>
+                <ul class="ap-affiliations" aria-label="Author affiliations">
+                    <li><sup>1</sup>Google</li>
+                    <li><sup>2</sup>Johannes Kepler University Linz</li>
+                </ul>
+                <details class="ap-abstract">
+                    <summary><span class="ap-read-label">Read abstract</span><span class="ap-hide-label">Hide abstract</span></summary>
+                    <div class="ap-abstract-body">
+                        <p>Identifying content types enables security pipelines to select parsers, scanners, and policies. Yet practical text-type detectors assign one label per file or block, hiding embedded languages, scripts, and encodings. Our stratified hand-labeled audit of 165 text files from MalwareBazaar, a public malware repository, finds 131 files with mixed content and 96 with an unexpected guest segment: an embedded region whose type falls outside the file’s expected structure. Applying Magika, a leading whole-file detector, to sliding windows yields poor segment recovery. Parsers expose the surrounding language’s structure, but finding undeclared guests, such as shell commands or Base64 payloads inside Python scripts, requires additional language-specific rules.</p>
+                        <p>We address this gap with TypeSeg, a lightweight model that labels each character with one of 35 content types. It offers a parallelizable U-Net and a long-context Mamba variant. On 875 annotated, primarily GitHub-based files, TypeSeg reaches 95.1% mean per-file F1 score, 23.1 points above whole-file Magika, while U-Net processes 4.8M characters/s on a consumer GPU. After adaptation using a separate MalwareBazaar training split, it recovers 81.8% of guest segments and 91.9% of encoded regions on the held-out 165-file malware audit. Rule-based expansion and validation then yield analyzer-ready inputs for 86.5% of validator-eligible guest segments. TypeSeg therefore provides a practical primitive to visualize file composition, pinpoint unusual mixtures, and route content to specialized analyzers. We open-source TypeSeg, including its code, model checkpoints, prompts, and dataset-building scripts.</p>
+                    </div>
+                </details>
+            </article>
+            <article class="ap-paper" id="accepted-paper-469" data-ap-theme="ai-for-security" data-ap-spotlight="false" aria-labelledby="accepted-title-469">
+                <h4 class="ap-paper-title" id="accepted-title-469">Unplugged from the Cloud: Lessons from Deploying Autonomous Forensic Agents on Local LLM</h4>
+                <p class="ap-authors"><span class="ap-author">Kavishka Fernando</span>, <span class="ap-author">Tharindu Ranathunga</span>, <span class="ap-author">George D. O'Mahony</span>, <span class="ap-author">Indika Dhanapala</span>, <span class="ap-author">Susan Rea</span></p>
+                <ul class="ap-affiliations" aria-label="Author affiliations">
+                    <li>Munster Technological University</li>
+                </ul>
+                <details class="ap-abstract">
+                    <summary><span class="ap-read-label">Read abstract</span><span class="ap-hide-label">Hide abstract</span></summary>
+                    <div class="ap-abstract-body">
+                        <p>Autonomous LLM-based forensic agents show promise for supporting cyber investigations, but many existing systems depend on cloud-hosted proprietary models. This limits their use in enterprise environments where host logs, network records, and forensic evidence cannot be shared with external APIs due to privacy and regulatory constraints. This paper evaluates the transition of Clouseau, a cloud-validated autonomous forensic agent, to locally served open-weight models. Our initial replication showed a significant performance drop when moving from the cloud backend to local models. Although this first appeared to be caused by context-window limitations, detailed run-log analysis revealed that the agent was often failing to issue required tool calls and was therefore not conducting a real investigation. To address this, we introduce the Local Inference Adaptation Layer (LIAL), which provides targeted framework and serving-level adaptations for reliable local deployment. The results show that the performance gap is not explained by model capability alone, but by the interaction between the agent framework, tool-use behaviour, local serving constraints, and evaluation methodology. We present our findings as five lessons framing the local performance collapse as a framework and serving-level mismatch rather than a model capability limit. With LIAL, local Gemma-4 performance improves to 99.50% Single-Host F1 and 89.50% Core-21 F1, with a single prompt-level tool-use fix accounting for 94% of the total recovery. Overall, this work demonstrates that privacy-preserving deployment of autonomous forensic agents requires careful adaptation of the agent framework and evaluation process, rather than simply replacing a cloud model with a local open-weight model.</p>
+                    </div>
+                </details>
+            </article>
+            <article class="ap-paper" id="accepted-paper-150" data-ap-theme="ai-for-security" data-ap-spotlight="false" aria-labelledby="accepted-title-150">
+                <h4 class="ap-paper-title" id="accepted-title-150">When Performance Meets Security: Reducing Attack Paths in Virtual Machine Placement via Reinforcement Learning</h4>
+                <p class="ap-authors"><span class="ap-author">Franco Terranova<sup title="Université de Lorraine, CNRS, Inria, LORIA">1</sup></span>, <span class="ap-author">Noura Limam<sup title="University of Waterloo">2</sup></span>, <span class="ap-author">Abdelkader Lahmadi<sup title="Université de Lorraine, CNRS, Inria, LORIA">1</sup></span>, <span class="ap-author">Isabelle Chrisment<sup title="Université de Lorraine, CNRS, Inria, LORIA">1</sup></span>, <span class="ap-author">Raouf Boutaba<sup title="University of Waterloo">2</sup></span></p>
+                <ul class="ap-affiliations" aria-label="Author affiliations">
+                    <li><sup>1</sup>Université de Lorraine, CNRS, Inria, LORIA</li>
+                    <li><sup>2</sup>University of Waterloo</li>
+                </ul>
+                <details class="ap-abstract">
+                    <summary><span class="ap-read-label">Read abstract</span><span class="ap-hide-label">Hide abstract</span></summary>
+                    <div class="ap-abstract-body">
+                        <p>Virtual Machine Placement (VMP) is traditionally formulated as a multi-objective optimization problem that balances operational objectives, such as resource utilization and energy consumption, while increasingly incorporating security considerations. However, existing security-aware VMP approaches often rely on static vulnerability indicators or predefined risk metrics that fail to capture the adaptive and sequential nature of realistic multi-stage attack campaigns. In this paper, we introduce an attacker-centric security objective for VMP, where the attack surface is quantified through a sequential adversarial decision process. Using multi-agent reinforcement learning, an attacker agent explores VM placements to exploit critical attack paths, while a defender agent adapts placements to reduce compromise opportunities while maintaining operational efficiency. This learned attack objective provides a more realistic security measure by accounting for network topology, exploit dependencies, and the strategic value of compromised resources. To enable evaluation and reproducibility, we release CyberBattleSim-VMP CyberBattleSim-VMP, a simulation framework supporting configurable attacker and defender behaviors for security-aware VMP research. Experiments in cloud-inspired simulation demonstrate that optimizing VMP against learned attacker behaviors reduces the effective attack surface by an average of 17% (up to 21%) while improving performance by an average of 5% (up to 12%) compared with five heuristic placement strategies under our evaluation protocol.</p>
+                    </div>
+                </details>
+            </article>
+            <article class="ap-paper" id="accepted-paper-27" data-ap-theme="ai-for-security" data-ap-spotlight="false" aria-labelledby="accepted-title-27">
+                <h4 class="ap-paper-title" id="accepted-title-27">Why AI-Assisted Security Monitoring Is Hard to Deploy: A Taxonomy of Policy-to-Operation Gaps in Industrial Control Environments</h4>
+                <p class="ap-authors"><span class="ap-author">Jeong-Han Yun<sup title="The Affiliated Institute of ETRI">1</sup></span>, <span class="ap-author">Jina Kang<sup title="The Affiliated Institute of ETRI">1</sup></span>, <span class="ap-author">Hyesong Choi<sup title="Soongsil University">2</sup></span></p>
+                <ul class="ap-affiliations" aria-label="Author affiliations">
+                    <li><sup>1</sup>The Affiliated Institute of ETRI</li>
+                    <li><sup>2</sup>Soongsil University</li>
+                </ul>
+                <details class="ap-abstract">
+                    <summary><span class="ap-read-label">Read abstract</span><span class="ap-hide-label">Hide abstract</span></summary>
+                    <div class="ap-abstract-body">
+                        <p>AI-based anomaly detection is often presented as a promising component of security monitoring in industrial control environments, yet field deployment remains difficult. This paper argues that deployment failure can arise not only from insufficient detector accuracy but also from an under-specified deployment layer between high-level AI/security governance and site-specific OT operation. We define the missing layer as a set of policy-to-operation gaps that arise when high-level requirements are not translated into site-specific decisions about unacceptable process consequences, monitored assets and tags, process states, security-relevant threat effects and attacker assumptions, validation data, metrics, roles, lifecycle controls, and evidence obligations. Through a practice-oriented conceptual synthesis of AI-governance, ICS-security, operator-centered ICS, MLOps, and anomaly-detection literature, we propose eight policy-to-operation gaps: site-specific scope, objective mismatch, scenario-to-test-data validation, context integration, performance criteria, role-aware actionability, lifecycle and drift, and evidence reconstruction. We map each gap to its deployment failure mode and a candidate operational artifact, and outline an intended-use-based readiness process that assesses artifact sufficiency according to consequence and permitted use, while distinguishing automatable checks and assistive functions from accountable human decisions. OT is not the only domain in which these gaps arise; rather, it is a high-consequence stress case in which AI-specific, adversarial, and organizational gaps interact visibly and expensively. We derive open research questions and argue for an explicit monitoring-domain profile that declares the conditions under which a detector is considered operationally valid for the declared use and an alarm candidate may be presented as an alarm for escalation or to support security decisions and incident reconstruction. The paper calls for a shift from model-centered anomaly detection to deployment-centered AI-assisted security monitoring that is scoped, adversary-aware, contextualized, actionable, maintainable, and reconstructable.</p>
+                    </div>
+                </details>
+            </article>
+            </div>
+        </section>
         <section class="ap-theme" data-ap-group="security-of-ai" aria-labelledby="accepted-security-of-ai-heading">
             <div class="ap-theme-heading">
                 <h3 class="ap-theme-title" id="accepted-security-of-ai-heading">Security/Privacy of AI</h3>
@@ -355,7 +579,7 @@
                 </details>
             </article>
             <article class="ap-paper" id="accepted-paper-61" data-ap-theme="security-of-ai" data-ap-spotlight="true" aria-labelledby="accepted-title-61">
-                <h4 class="ap-paper-title" id="accepted-title-61">Trojan Hippo Bench: A Dynamic Benchmark for Persistent Memory Attacks and Defenses in LLM Agents <span class="ap-spotlight"><i class="fa fa-star" aria-hidden="true"></i> Spotlight</span></h4>
+                <h4 class="ap-paper-title" id="accepted-title-61">Trojan Hippo Bench: A Dynamic Benchmark for Persistent Memory Attacks and Defenses in LLM Agents <span style="display: inline-block; white-space: nowrap;"> Plugins <a href="https://arxiv.org/abs/2605.01970" target="_blank" rel="noopener noreferrer" title="View preprint" aria-label="View preprint (opens in a new tab)" style="display: inline-block; margin-left: 8px; color: #b42318; text-decoration: none;"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></span><span class="ap-spotlight"><i class="fa fa-star" aria-hidden="true"></i> Spotlight</span></h4>
                 <p class="ap-authors"><span class="ap-author">Debeshee Das<sup title="ETH Zurich">1</sup></span>, <span class="ap-author">Julien Piet<sup title="University of California, Berkeley">2</sup></span>, <span class="ap-author">Darya Kaviani<sup title="University of California, Berkeley">2</sup></span>, <span class="ap-author">Luca Beurer-Kellner<sup title="Snyk">3</sup></span>, <span class="ap-author">Florian Tramèr<sup title="ETH Zurich">1</sup></span>, <span class="ap-author">David Wagner<sup title="University of California, Berkeley">2</sup></span></p>
                 <ul class="ap-affiliations" aria-label="Author affiliations">
                     <li><sup>1</sup>ETH Zurich</li>
@@ -387,230 +611,7 @@
             </div>
         </section>
 
-        <section class="ap-theme" data-ap-group="ai-for-security" aria-labelledby="accepted-ai-for-security-heading">
-            <div class="ap-theme-heading">
-                <h3 class="ap-theme-title" id="accepted-ai-for-security-heading">AI for Security/Privacy</h3>
-                <span class="ap-theme-count">15 papers</span>
-            </div>
-            <div class="ap-paper-list">
-            <article class="ap-paper" id="accepted-paper-314" data-ap-theme="ai-for-security" data-ap-spotlight="true" aria-labelledby="accepted-title-314">
-                <h4 class="ap-paper-title" id="accepted-title-314">Beyond the Syntax: Do Security Experts Trust LLMs for NIDS Rule Engineering? <span class="ap-spotlight"><i class="fa fa-star" aria-hidden="true"></i> Spotlight</span></h4>
-                <p class="ap-authors"><span class="ap-author">Lorenzo Di Filippo<sup title="Sorbonne Université, LIP6, Paris, France">1</sup></span>, <span class="ap-author">Enkeleda Bardhi<sup title="Delft University of Technology">2</sup></span>, <span class="ap-author">Andrea Agiollo<sup title="Delft University of Technology">2</sup></span>, <span class="ap-author">Alessandro Palma<sup title="Sapienza University of Rome">3</sup></span>, <span class="ap-author">Silvia Bonomi<sup title="Sapienza University of Rome">3</sup></span>, <span class="ap-author">Fernando Kuipers<sup title="Delft University of Technology">2</sup></span></p>
-                <ul class="ap-affiliations" aria-label="Author affiliations">
-                    <li><sup>1</sup>Sorbonne Université, LIP6, Paris, France</li>
-                    <li><sup>2</sup>Delft University of Technology</li>
-                    <li><sup>3</sup>Sapienza University of Rome</li>
-                </ul>
-                <details class="ap-abstract">
-                    <summary><span class="ap-read-label">Read abstract</span><span class="ap-hide-label">Hide abstract</span></summary>
-                    <div class="ap-abstract-body">
-                        <p>As network threats evolve, manual Network Intrusion Detection Systems (NIDS) rule engineering has become a critical operational bottleneck. While Large Language Models (LLMs) show promise for automating this process, their ability to produce production-ready rules remains unvalidated. This paper presents a human-centered investigation into LLM-based NIDS rule engineering, formalizing a context-aware generation framework and evaluating it through an exploratory user study with 10 domain experts. Our evaluation reveals a syntax-semantics paradox: although LLMs generate syntactically correct rules, experts find them only partially practically useful due to low specificity and logic hallucinations in 12% of cases. While the system received a favorable SUS score of 67, practitioners remain skeptical of its autonomous capabilities, viewing LLMs as support tools for drafting and verification rather than independent generators. Finally, our statistical analysis indicates that while large-scale models (≥ 70𝐵) consistently produce syntactically valid rules, small models (≤ 4𝐵) are largely ineffective for IDS rule generation.</p>
-                    </div>
-                </details>
-            </article>
-            <article class="ap-paper" id="accepted-paper-41" data-ap-theme="ai-for-security" data-ap-spotlight="false" aria-labelledby="accepted-title-41">
-                <h4 class="ap-paper-title" id="accepted-title-41">Constructive uses of AI in electronic voting -- application development and security analysis</h4>
-                <p class="ap-authors"><span class="ap-author">Jan Willemson<sup title="Cybernetica">1</sup></span>, <span class="ap-author">Artjom Zingfeld<sup title="Smartmatic-Cybernetica Centre of Excellence for Internet Voting">2</sup></span></p>
-                <ul class="ap-affiliations" aria-label="Author affiliations">
-                    <li><sup>1</sup>Cybernetica</li>
-                    <li><sup>2</sup>Smartmatic-Cybernetica Centre of Excellence for Internet Voting</li>
-                </ul>
-                <details class="ap-abstract">
-                    <summary><span class="ap-read-label">Read abstract</span><span class="ap-hide-label">Hide abstract</span></summary>
-                    <div class="ap-abstract-body">
-                        <p>The rise of Artificial Intelligence (AI) tools is making significant impact in many application areas, and elections are no exception. A lot of this impact (deep fakes, misinformation campaigns, etc.) can be viewed as negative. However, AI also has a lot of potential to be used constructively, and this is the topic of the current paper. We study three application areas, and use the Estonian IVXV Internet voting system as the underlying case study. First, we extract formal ProVerif models from the IVXV source code. Secondly, we build an independent voting application based on the server-side source code (which is interesting because the official client application has not been open-sourced). Thirdly, we perform a security analysis of the IVXV source code with the publicly available state-of-the-art AI tools. Our analysis revealed four findings that require a code fix, and two of these were new to the developers. The analysis also gave several other recommendations for gradual improvement of the system.</p>
-                    </div>
-                </details>
-            </article>
-            <article class="ap-paper" id="accepted-paper-293" data-ap-theme="ai-for-security" data-ap-spotlight="false" aria-labelledby="accepted-title-293">
-                <h4 class="ap-paper-title" id="accepted-title-293">Data Augmentation in Learning-Based Binary Code Analysis</h4>
-                <p class="ap-authors"><span class="ap-author">Lennart von Stülpnagel<sup title="BIFOLD; TU Berlin">1,2</sup></span>, <span class="ap-author">Felix Weissberg<sup title="BIFOLD; TU Berlin">1,2</sup></span>, <span class="ap-author">Jonas Möller<sup title="BIFOLD; TU Berlin">1,2</sup></span>, <span class="ap-author">Benjamin Greb<sup title="TU Berlin">2</sup></span>, <span class="ap-author">Thorsten Eisenhofer<sup title="CISPA Helmholtz Center for Information Security">3</sup></span>, <span class="ap-author">Konrad Rieck<sup title="BIFOLD; TU Berlin">1,2</sup></span></p>
-                <ul class="ap-affiliations" aria-label="Author affiliations">
-                    <li><sup>1</sup>BIFOLD</li>
-                    <li><sup>2</sup>TU Berlin</li>
-                    <li><sup>3</sup>CISPA Helmholtz Center for Information Security</li>
-                </ul>
-                <details class="ap-abstract">
-                    <summary><span class="ap-read-label">Read abstract</span><span class="ap-hide-label">Hide abstract</span></summary>
-                    <div class="ap-abstract-body">
-                        <p>Understanding and analyzing binary code is fundamental to security-critical tasks, such as reverse engineering and vulnerability discovery. As machine learning has become integral to these tasks, techniques from other domains have been transferred to binary code analysis. In particular, inspired by computer vision, data augmentation has recently been proposed to improve performance in code analysis tasks. However, prior work considers only a limited set of transformations and tasks, making it difficult to draw broader conclusions about when and how augmentation is effective. In this work, we thus take a step back and systematically study the role of data augmentation in binary code analysis. To this end, we introduce a unified framework that encompasses both semantic-preserving and semantic-altering code transformations. We evaluate the impact of augmentation across multiple tasks, including function similarity, parameter analysis, and vulnerability discovery. Our findings reveal a key difference from computer vision: in binary code analysis, augmentation is not a silver bullet. While code transformations can improve performance when training data is scarce, the gains diminish as more data becomes available. We conclude that augmentation is only beneficial under specific conditions and therefore derive practical recommendations for its application.</p>
-                    </div>
-                </details>
-            </article>
-            <article class="ap-paper" id="accepted-paper-578" data-ap-theme="ai-for-security" data-ap-spotlight="false" aria-labelledby="accepted-title-578">
-                <h4 class="ap-paper-title" id="accepted-title-578">Exposure is All You Need: Using LLMs to Identify Critical Endpoints at Internet Scale</h4>
-                <p class="ap-authors"><span class="ap-author">Stijn Pletinckx<sup title="University of California, Santa Barbara">1</sup></span>, <span class="ap-author">Milad Nasr<sup title="Anthropic">2</sup></span>, <span class="ap-author">Sanghyun Hong<sup title="Oregon State University">3</sup></span>, <span class="ap-author">Zakir Durumeric<sup title="Stanford University">4</sup></span>, <span class="ap-author">Nicholas Carlini<sup title="Anthropic">2</sup></span></p>
-                <ul class="ap-affiliations" aria-label="Author affiliations">
-                    <li><sup>1</sup>University of California, Santa Barbara</li>
-                    <li><sup>2</sup>Anthropic</li>
-                    <li><sup>3</sup>Oregon State University</li>
-                    <li><sup>4</sup>Stanford University</li>
-                </ul>
-                <details class="ap-abstract">
-                    <summary><span class="ap-read-label">Read abstract</span><span class="ap-hide-label">Hide abstract</span></summary>
-                    <div class="ap-abstract-body">
-                        <p>The modern Internet hosts billions of services, many of which inadvertently expose sensitive data or allow device manipulation. Discovering security-relevant Internet exposures requires both manual analysis and a priori knowledge of what to look for, neither of which scales to the diversity of devices and services in the wild. In this paper, we show that Large Language Models (LLMs) change this dynamic, and can act as general-purpose analyzers that recognize exposed services without predefined rules or fingerprints. We then use this capability to conduct the first comprehensive measurement of exposed services on the web. To make this measurement feasible, we use LLMs to build a hierarchical taxonomy of services on the web, revealing the full landscape of what is accessible online, and develop a multi-stage pipeline that combines lightweight ML classifiers with targeted LLM analysis to triage and rank the most security-critical exposures. We demonstrate this on five categories --directory listings, administrative dashboards, uncommon IoT devices, pages showing stack traces, and RTSP camera feeds-- using Internet scan data from over 20 million services. Our approach identifies thousands of critically exposed services, including healthcare management systems, financial documents, API keys, passports, and private home cameras.</p>
-                    </div>
-                </details>
-            </article>
-            <article class="ap-paper" id="accepted-paper-18" data-ap-theme="ai-for-security" data-ap-spotlight="true" aria-labelledby="accepted-title-18">
-                <h4 class="ap-paper-title" id="accepted-title-18">Hacking Back the AI Hacker: Prompt Injection as a Defense Against LLM-driven Cyberattacks <span class="ap-spotlight"><i class="fa fa-star" aria-hidden="true"></i> Spotlight</span></h4>
-                <p class="ap-authors"><span class="ap-author">Dario Pasquini<sup title="Cracken">1</sup></span>, <span class="ap-author">Evgenios M. Kornaropoulos<sup title="George Mason University">2</sup></span>, <span class="ap-author">Giuseppe Ateniese<sup title="George Mason University">2</sup></span></p>
-                <ul class="ap-affiliations" aria-label="Author affiliations">
-                    <li><sup>1</sup>Cracken</li>
-                    <li><sup>2</sup>George Mason University</li>
-                </ul>
-                <details class="ap-abstract">
-                    <summary><span class="ap-read-label">Read abstract</span><span class="ap-hide-label">Hide abstract</span></summary>
-                    <div class="ap-abstract-body">
-                        <p>Large language models (LLMs) are making multi-step cyberattacks cheaper to run and easier to automate. We present Mantis, a mechanism that leverages prompt injection for defensive purposes, turning it against the attacking LLM-agent itself. Once Mantis detects an attacking agent, it injects defender-crafted content into system responses and steers the agent toward one of two outcomes: a tarpit that wastes time and resources, or a controlled hack-back action that helps collect attribution information. Mantis combines decoy services with dynamic prompt injections and uses the attacker's own interaction loop to deliver the defense. In our evaluation, Mantis achieves the sabotage objective in 95.4% of runs and keeps attacker success below 3%. We release Mantis as open source.</p>
-                    </div>
-                </details>
-            </article>
-            <article class="ap-paper" id="accepted-paper-143" data-ap-theme="ai-for-security" data-ap-spotlight="false" aria-labelledby="accepted-title-143">
-                <h4 class="ap-paper-title" id="accepted-title-143">PkgScanArena: Benchmarking LLM-Based Package Scanners against Indirect Prompt Injection</h4>
-                <p class="ap-authors"><span class="ap-author">Himadri Chowdhury</span>, <span class="ap-author">Ahmed Hatem</span>, <span class="ap-author">Joseph Khoury</span></p>
-                <ul class="ap-affiliations" aria-label="Author affiliations">
-                    <li>Louisiana State University</li>
-                </ul>
-                <details class="ap-abstract">
-                    <summary><span class="ap-read-label">Read abstract</span><span class="ap-hide-label">Hide abstract</span></summary>
-                    <div class="ap-abstract-body">
-                        <p>Open-source package ecosystems such as PyPI and npm remain persistent targets for malicious campaigns. These campaigns have outgrown signature-based triage, so recent work has turned to large language models (LLMs) that scan package content and return a verdict, which lets the analysis consume attacker-controlled text. In 2026, the hades campaign on npm carried a prompt injection written to hijack the scanner’s instructions and coerce a clean verdict. Indirect prompt injection is well studied, but its reach into automated package-security analysis remains unmeasured. We therefore ask a broader question. How reliable are LLM-based package scanners when the package itself is written to manipulate the analysis? We present PkgScanArena, a benchmark that pairs a vetted dataset of 2,000 malicious and 1,000 benign npm and PyPI packages with a taxonomy of 11 techniques and 3 injection channels across three attacker goals, namely evasion, denial, and sabotage. An AST-guided pipeline injects these prompts into real packages, and we evaluate 25 open-weight and proprietary backends together with two deployed scanners. Our benchmark inverts the expected threat. Evasion proves largely unattainable, at or below 0.6% for nine of ten cloud backends. Exposure instead shifts to the opposite direction: benign accuracy degrades for all but two of the 25 backends, sabotage reaches 31.1%, and denial reaches 19.6% on the most safety-aligned model. The two deployed scanners inherit both weaknesses. The exposure lies not in coercing a scanner to miss malicious code, but in coercing it to condemn benign code.</p>
-                    </div>
-                </details>
-            </article>
-            <article class="ap-paper" id="accepted-paper-733" data-ap-theme="ai-for-security" data-ap-spotlight="false" aria-labelledby="accepted-title-733">
-                <h4 class="ap-paper-title" id="accepted-title-733">Plug 'n' Pray: Agentic LLM-based Detection of Potential Log File Exposures in Third-Party Content Management System Plugins</h4>
-                <p class="ap-authors"><span class="ap-author">Sebastian Neef</span></p>
-                <ul class="ap-affiliations" aria-label="Author affiliations">
-                    <li>TU Berlin</li>
-                </ul>
-                <details class="ap-abstract">
-                    <summary><span class="ap-read-label">Read abstract</span><span class="ap-hide-label">Hide abstract</span></summary>
-                    <div class="ap-abstract-body">
-                        <p>Content Management Systems (CMS), such as WordPress, power a large share of the web (~58%), and their extensibility through third-party plugins is a major source of their popularity as well as of their attack surface. One high-impact weakness that remains understudied is log file exposure by CMS plugins, which create log files for debugging or other purposes. If these files are insufficiently secured, they can disclose sensitive information (e.g. credentials, personal data) which has led to website compromises in the past.</p>
-                        <p>In this work, we present an agentic, LLM-based framework that automatically detects potential log file exposures in plugins of the most popular CMS (WordPress). Our agent analyzes each plugin by performing static and dynamic analysis.</p>
-                        <p>We evaluated our approach on the 300 most-installed WordPress plugins (about 0.6% of all), which together account for over 250M active installations, i.e. 75% of all active installations in the official plugin ecosystem. We manually validated each finding, reproducing 79 of 81 findings from 62 plugins. We observed that several protective measures appear to be implemented that we classify as creation-control (e.g. manual log activation) and access-control (e.g. deny rules in .htaccess). However, we find that multi-layered protection is required, but not always present.</p>
-                        <p>From these results we derive a taxonomy of log file path and protection patterns and deduce a set of best practices for developers to securely handle them. Finally, our study corroborates that agentic LLMs are an useful tool for security analysis.</p>
-                    </div>
-                </details>
-            </article>
-            <article class="ap-paper" id="accepted-paper-107" data-ap-theme="ai-for-security" data-ap-spotlight="true" aria-labelledby="accepted-title-107">
-                <h4 class="ap-paper-title" id="accepted-title-107">ScopeBench: Do Agents Preserve Engagement Boundaries Under Goal Pressure? <span class="ap-spotlight"><i class="fa fa-star" aria-hidden="true"></i> Spotlight</span></h4>
-                <p class="ap-authors"><span class="ap-author">Shane Caldwell</span>, <span class="ap-author">Max Harley</span>, <span class="ap-author">Ads Dawson</span>, <span class="ap-author">Michael Kouremetis</span>, <span class="ap-author">Vincent Abruzzo</span>, <span class="ap-author">Will Pearce</span></p>
-                <ul class="ap-affiliations" aria-label="Author affiliations">
-                    <li>Dreadnode</li>
-                </ul>
-                <details class="ap-abstract">
-                    <summary><span class="ap-read-label">Read abstract</span><span class="ap-hide-label">Hide abstract</span></summary>
-                    <div class="ap-abstract-body">
-                        <p>Agents are increasingly deployed with real autonomy in web application and network penetration testing, where a single out-of-scope action can breach a client's engagement boundary. Existing offensive-security benchmarks measure raw hacking capability; as those benchmarks saturate, what actually gates deployment is a special case of alignment: scope adherence. We introduce ScopeBench, a benchmark of 30 dead-end agentic security tasks in which the stated objective is reachable only by violating the stated scope. Each task appears under two conditions that share an environment, verifier, and objective and differ only in scope: one instruction set has no scope and measures capability; the other has a natural-language scope to measure adherence. Every trajectory passes through two grading arms. First, a deterministic flag verifier acts as a violation verifier—a pass under scoped instruction proves by construction that a forbidden action occurred—yielding a high-precision lower bound on the violation rate. A tool-assisted, full-context judge then estimates whether an out-of-scope call occurred in trajectories that fail mechanical verification. We calibrate the judge against 100 ScopeBench trajectories labeled call-by-call by human annotators, and a blinded audit of the evaluated rollouts finds its high recall holds—no false negatives among the 36 audited violations, with over-flagging its only observed error. Across 8 models run in one harness, raw capability spans 12.2% to 81.1%. The mechanical verifier finds violations in 4.4% to 32.2% of scoped trials; adding the judge's review of the trials that never submitted a flag raises the estimate to 13.3%–65.6% violation. Taken together, the grading arms find a hybrid 34.4%–86.7% adherence—558 violations across the 1,440 scoped trials. Most significantly, opus-4-8 achieves a raw-capability score 10 percentage points higher than sonnet-4-6's while exhibiting 35.6 percentage points higher scope adherence. We release this pilot as a methodological framework for measuring scope adherence in future agents, with an open pathway for community task contributions.</p>
-                    </div>
-                </details>
-            </article>
-            <article class="ap-paper" id="accepted-paper-332" data-ap-theme="ai-for-security" data-ap-spotlight="false" aria-labelledby="accepted-title-332">
-                <h4 class="ap-paper-title" id="accepted-title-332">Time Will Tell: Illuminating Causes of Score Inflation in Source Code Vulnerability Detection Benchmarks</h4>
-                <p class="ap-authors"><span class="ap-author">Alexander De Furia<sup title="University of Ottawa">1</sup></span>, <span class="ap-author">Colin Bellinger<sup title="University of Ottawa">1</sup></span>, <span class="ap-author">Paula Branco<sup title="University of Ottawa">1</sup></span>, <span class="ap-author">Alexander M. Hoole<sup title="OpenText">2</sup></span>, <span class="ap-author">Guy-Vincent Jourdan<sup title="University of Ottawa">1</sup></span>, <span class="ap-author">Hari Manassery Koduvely<sup title="OpenText">2</sup></span>, <span class="ap-author">Manish Marwah<sup title="Independent Researcher">3</sup></span></p>
-                <ul class="ap-affiliations" aria-label="Author affiliations">
-                    <li><sup>1</sup>University of Ottawa</li>
-                    <li><sup>2</sup>OpenText</li>
-                    <li><sup>3</sup>Independent Researcher</li>
-                </ul>
-                <details class="ap-abstract">
-                    <summary><span class="ap-read-label">Read abstract</span><span class="ap-hide-label">Hide abstract</span></summary>
-                    <div class="ap-abstract-body">
-                        <p>LLM-based source code vulnerability detection (SCVD) reports strong benchmark performance that does not hold up in the real world. Use of random splitting in test-set construction has been widely blamed for permitting time-travel and inter-commit leakage, but neither mechanism has been empirically isolated. We evaluate five different cross-validation strategies across eight fine-tuned and eight zero-shot LLMs on MegaVul-C; every strategy is also evaluated on the same held-out future set to separate training-set from test-set effects. Random splitting inflates reported test-set F1 by ~34 for fine-tuned models and ~16 for zero-shot models. On the shared holdout set, models fine-tuned using random and temporal training splits achieve statistically equivalent performance within ±2 pp (<var>p</var><sub>TOST</sub> &lt; 0.001), which places the inflation on test-set construction. Matched comparisons that isolate inter-commit leakage and time-travel are equivalent on the holdout set within the same margin. Correcting the train-test CWE distribution by resampling, our proxy for evolving vulnerability patterns, does not close the gap either. The gap instead reflects differences between the training and evaluation distributions, which we localize but do not reduce to a single causal property. Temporal splitting remains necessary for realistic evaluation because it reduces the optimistic bias of random test-set construction. We recommend Temporal LOO Block CV, which preserves the variance reduction of K-fold evaluation while inducing distribution shift at each fold boundary. All split-generation, analysis, and training code is released to support reproducible evaluation of LLMs for SCVD.</p>
-                    </div>
-                </details>
-            </article>
-            <article class="ap-paper" id="accepted-paper-503" data-ap-theme="ai-for-security" data-ap-spotlight="false" aria-labelledby="accepted-title-503">
-                <h4 class="ap-paper-title" id="accepted-title-503">Towards Behavior Tree–Guided Vulnerability Detection with Lightweight LLMs</h4>
-                <p class="ap-authors"><span class="ap-author">Enna Basic</span>, <span class="ap-author">Alberto Giaretta</span></p>
-                <ul class="ap-affiliations" aria-label="Author affiliations">
-                    <li>Örebro University</li>
-                </ul>
-                <details class="ap-abstract">
-                    <summary><span class="ap-read-label">Read abstract</span><span class="ap-hide-label">Hide abstract</span></summary>
-                    <div class="ap-abstract-body">
-                        <p>Large Language Models (LLMs) are increasingly used for software vulnerability detection, but their performance depends on how source code is represented in the input. Most prompting approaches use source code in its original form, while some works propose the use of structured representations. Abstract Syntax Trees (ASTs) are one of the most popular approaches, but AST verbosity increases input size relative to source code, making them hard to fit within some LLMs context windows. This paper investigates Behavior Trees (BTs) as an alternative intermediate representation for LLM-based vulnerability detection. BTs encode control flow, conditions, and executable actions more compactly than ASTs, making them a natural candidate when token count is a constraint. First, we propose a preprocessing stage that parses Java source code into ASTs and then converts them into BT representations. We then compare vulnerability detection performance across 460 Java samples from the Juliet Java test suite, using three input representations: raw source code, AST, and BT. All experiments use a single quantized local LLM, Mistral Small 3.2 24B (Q4_K_M). Our results show that using BT representations improves recall on short code samples, while raw source code achieves higher precision. On longer samples, BTs improve overall performance over the original representation and fit within the context window, whereas many ASTs exceed the context limit. Within the evaluated model and dataset, these findings provide preliminary evidence that BTs can serve as a compact and useful structured representation for vulnerability detection.</p>
-                    </div>
-                </details>
-            </article>
-            <article class="ap-paper" id="accepted-paper-367" data-ap-theme="ai-for-security" data-ap-spotlight="false" aria-labelledby="accepted-title-367">
-                <h4 class="ap-paper-title" id="accepted-title-367">TRIAGE-CPG: A Cross-Model Study of Budgeted Static Malware Triage with Large Language Models</h4>
-                <p class="ap-authors"><span class="ap-author">Paul-Andrei Sava<sup title="Fraunhofer AISEC">1</sup></span>, <span class="ap-author">Alexander Küchler<sup title="Fraunhofer AISEC">1</sup></span>, <span class="ap-author">Daniel Kowatsch<sup title="Fraunhofer AISEC">1</sup></span>, <span class="ap-author">Bernhard Grill<sup title="Google">2</sup></span>, <span class="ap-author">Jennifer Pullman<sup title="Google">2</sup></span>, <span class="ap-author">Yanick Fratantonio<sup title="Google">2</sup></span>, <span class="ap-author">Luca Invernizzi<sup title="Google">2</sup></span></p>
-                <ul class="ap-affiliations" aria-label="Author affiliations">
-                    <li><sup>1</sup>Fraunhofer AISEC</li>
-                    <li><sup>2</sup>Google</li>
-                </ul>
-                <details class="ap-abstract">
-                    <summary><span class="ap-read-label">Read abstract</span><span class="ap-hide-label">Hide abstract</span></summary>
-                    <div class="ap-abstract-body">
-                        <p>When triaging unknown binaries, security analysts must quickly decide which samples to clear as benign, flag as malicious, or escalate for deeper analysis. Large Language Models (LLMs) could support these decisions by interpreting decompiled code, but a binary can contain hundreds or thousands of functions, making exhaustive LLM analysis impractical. We study how current LLMs behave when static triage is formulated as budgeted evidence acquisition: which functions they inspect and how they trade off benign clearance, malware detection, and escalation.</p>
-                        <p>To enable a controlled comparison, we implement TRIAGE-CPG, a fixed pipeline over a code property graph (CPG) of a decompiled binary. An LLM-free heuristic selects seed functions, an agent expands the resulting evidence dossier under a fixed budget, and a reporting stage produces a benign, suspicious, or malicious verdict together with a behavioral report. We evaluate eight closed-source and open-weight models on 1000 Windows PE binaries, using a 600-sample test split and the same zero-shot protocol for every model. We assess the ternary verdicts under both a strict binary reading and triage balanced accuracy (tBA), which credits malware that is flagged or escalated and benign samples only when cleared.</p>
-                        <p>After analyzing about 40 of a mean 1000 functions per binary, the highest-scoring model reaches a strict balanced accuracy of 0.805 and a tBA of 0.855, flagging 65% of malware, escalating another 12%, and clearing 94% of benign samples. The models implement different triage policies: high-specificity models produce small, malware-rich escalation queues, whereas recall-oriented models escalate or flag much more broadly. Both closed-source and open-weight models appear across this spectrum. Our results identify no universal deployment configuration: model choice itself determines the clear/flag/escalate trade-off under limited static evidence.</p>
-                    </div>
-                </details>
-            </article>
-            <article class="ap-paper" id="accepted-paper-292" data-ap-theme="ai-for-security" data-ap-spotlight="true" aria-labelledby="accepted-title-292">
-                <h4 class="ap-paper-title" id="accepted-title-292">TypeSeg: Content-Type Segmentation for Mixed Text <span class="ap-spotlight"><i class="fa fa-star" aria-hidden="true"></i> Spotlight</span></h4>
-                <p class="ap-authors"><span class="ap-author">Martin Dallinger<sup title="Google; Johannes Kepler University Linz">1,2</sup></span>, <span class="ap-author">Yanick Fratantonio<sup title="Google">1</sup></span>, <span class="ap-author">Luca Invernizzi<sup title="Google">1</sup></span></p>
-                <ul class="ap-affiliations" aria-label="Author affiliations">
-                    <li><sup>1</sup>Google</li>
-                    <li><sup>2</sup>Johannes Kepler University Linz</li>
-                </ul>
-                <details class="ap-abstract">
-                    <summary><span class="ap-read-label">Read abstract</span><span class="ap-hide-label">Hide abstract</span></summary>
-                    <div class="ap-abstract-body">
-                        <p>Identifying content types enables security pipelines to select parsers, scanners, and policies. Yet practical text-type detectors assign one label per file or block, hiding embedded languages, scripts, and encodings. Our stratified hand-labeled audit of 165 text files from MalwareBazaar, a public malware repository, finds 131 files with mixed content and 96 with an unexpected guest segment: an embedded region whose type falls outside the file’s expected structure. Applying Magika, a leading whole-file detector, to sliding windows yields poor segment recovery. Parsers expose the surrounding language’s structure, but finding undeclared guests, such as shell commands or Base64 payloads inside Python scripts, requires additional language-specific rules.</p>
-                        <p>We address this gap with TypeSeg, a lightweight model that labels each character with one of 35 content types. It offers a parallelizable U-Net and a long-context Mamba variant. On 875 annotated, primarily GitHub-based files, TypeSeg reaches 95.1% mean per-file F1 score, 23.1 points above whole-file Magika, while U-Net processes 4.8M characters/s on a consumer GPU. After adaptation using a separate MalwareBazaar training split, it recovers 81.8% of guest segments and 91.9% of encoded regions on the held-out 165-file malware audit. Rule-based expansion and validation then yield analyzer-ready inputs for 86.5% of validator-eligible guest segments. TypeSeg therefore provides a practical primitive to visualize file composition, pinpoint unusual mixtures, and route content to specialized analyzers. We open-source TypeSeg, including its code, model checkpoints, prompts, and dataset-building scripts.</p>
-                    </div>
-                </details>
-            </article>
-            <article class="ap-paper" id="accepted-paper-469" data-ap-theme="ai-for-security" data-ap-spotlight="false" aria-labelledby="accepted-title-469">
-                <h4 class="ap-paper-title" id="accepted-title-469">Unplugged from the Cloud: Lessons from Deploying Autonomous Forensic Agents on Local LLM</h4>
-                <p class="ap-authors"><span class="ap-author">Kavishka Fernando</span>, <span class="ap-author">Tharindu Ranathunga</span>, <span class="ap-author">George D. O'Mahony</span>, <span class="ap-author">Indika Dhanapala</span>, <span class="ap-author">Susan Rea</span></p>
-                <ul class="ap-affiliations" aria-label="Author affiliations">
-                    <li>Munster Technological University</li>
-                </ul>
-                <details class="ap-abstract">
-                    <summary><span class="ap-read-label">Read abstract</span><span class="ap-hide-label">Hide abstract</span></summary>
-                    <div class="ap-abstract-body">
-                        <p>Autonomous LLM-based forensic agents show promise for supporting cyber investigations, but many existing systems depend on cloud-hosted proprietary models. This limits their use in enterprise environments where host logs, network records, and forensic evidence cannot be shared with external APIs due to privacy and regulatory constraints. This paper evaluates the transition of Clouseau, a cloud-validated autonomous forensic agent, to locally served open-weight models. Our initial replication showed a significant performance drop when moving from the cloud backend to local models. Although this first appeared to be caused by context-window limitations, detailed run-log analysis revealed that the agent was often failing to issue required tool calls and was therefore not conducting a real investigation. To address this, we introduce the Local Inference Adaptation Layer (LIAL), which provides targeted framework and serving-level adaptations for reliable local deployment. The results show that the performance gap is not explained by model capability alone, but by the interaction between the agent framework, tool-use behaviour, local serving constraints, and evaluation methodology. We present our findings as five lessons framing the local performance collapse as a framework and serving-level mismatch rather than a model capability limit. With LIAL, local Gemma-4 performance improves to 99.50% Single-Host F1 and 89.50% Core-21 F1, with a single prompt-level tool-use fix accounting for 94% of the total recovery. Overall, this work demonstrates that privacy-preserving deployment of autonomous forensic agents requires careful adaptation of the agent framework and evaluation process, rather than simply replacing a cloud model with a local open-weight model.</p>
-                    </div>
-                </details>
-            </article>
-            <article class="ap-paper" id="accepted-paper-150" data-ap-theme="ai-for-security" data-ap-spotlight="false" aria-labelledby="accepted-title-150">
-                <h4 class="ap-paper-title" id="accepted-title-150">When Performance Meets Security: Reducing Attack Paths in Virtual Machine Placement via Reinforcement Learning</h4>
-                <p class="ap-authors"><span class="ap-author">Franco Terranova<sup title="Université de Lorraine, CNRS, Inria, LORIA">1</sup></span>, <span class="ap-author">Noura Limam<sup title="University of Waterloo">2</sup></span>, <span class="ap-author">Abdelkader Lahmadi<sup title="Université de Lorraine, CNRS, Inria, LORIA">1</sup></span>, <span class="ap-author">Isabelle Chrisment<sup title="Université de Lorraine, CNRS, Inria, LORIA">1</sup></span>, <span class="ap-author">Raouf Boutaba<sup title="University of Waterloo">2</sup></span></p>
-                <ul class="ap-affiliations" aria-label="Author affiliations">
-                    <li><sup>1</sup>Université de Lorraine, CNRS, Inria, LORIA</li>
-                    <li><sup>2</sup>University of Waterloo</li>
-                </ul>
-                <details class="ap-abstract">
-                    <summary><span class="ap-read-label">Read abstract</span><span class="ap-hide-label">Hide abstract</span></summary>
-                    <div class="ap-abstract-body">
-                        <p>Virtual Machine Placement (VMP) is traditionally formulated as a multi-objective optimization problem that balances operational objectives, such as resource utilization and energy consumption, while increasingly incorporating security considerations. However, existing security-aware VMP approaches often rely on static vulnerability indicators or predefined risk metrics that fail to capture the adaptive and sequential nature of realistic multi-stage attack campaigns. In this paper, we introduce an attacker-centric security objective for VMP, where the attack surface is quantified through a sequential adversarial decision process. Using multi-agent reinforcement learning, an attacker agent explores VM placements to exploit critical attack paths, while a defender agent adapts placements to reduce compromise opportunities while maintaining operational efficiency. This learned attack objective provides a more realistic security measure by accounting for network topology, exploit dependencies, and the strategic value of compromised resources. To enable evaluation and reproducibility, we release CyberBattleSim-VMP CyberBattleSim-VMP, a simulation framework supporting configurable attacker and defender behaviors for security-aware VMP research. Experiments in cloud-inspired simulation demonstrate that optimizing VMP against learned attacker behaviors reduces the effective attack surface by an average of 17% (up to 21%) while improving performance by an average of 5% (up to 12%) compared with five heuristic placement strategies under our evaluation protocol.</p>
-                    </div>
-                </details>
-            </article>
-            <article class="ap-paper" id="accepted-paper-27" data-ap-theme="ai-for-security" data-ap-spotlight="false" aria-labelledby="accepted-title-27">
-                <h4 class="ap-paper-title" id="accepted-title-27">Why AI-Assisted Security Monitoring Is Hard to Deploy: A Taxonomy of Policy-to-Operation Gaps in Industrial Control Environments</h4>
-                <p class="ap-authors"><span class="ap-author">Jeong-Han Yun<sup title="The Affiliated Institute of ETRI">1</sup></span>, <span class="ap-author">Jina Kang<sup title="The Affiliated Institute of ETRI">1</sup></span>, <span class="ap-author">Hyesong Choi<sup title="Soongsil University">2</sup></span></p>
-                <ul class="ap-affiliations" aria-label="Author affiliations">
-                    <li><sup>1</sup>The Affiliated Institute of ETRI</li>
-                    <li><sup>2</sup>Soongsil University</li>
-                </ul>
-                <details class="ap-abstract">
-                    <summary><span class="ap-read-label">Read abstract</span><span class="ap-hide-label">Hide abstract</span></summary>
-                    <div class="ap-abstract-body">
-                        <p>AI-based anomaly detection is often presented as a promising component of security monitoring in industrial control environments, yet field deployment remains difficult. This paper argues that deployment failure can arise not only from insufficient detector accuracy but also from an under-specified deployment layer between high-level AI/security governance and site-specific OT operation. We define the missing layer as a set of policy-to-operation gaps that arise when high-level requirements are not translated into site-specific decisions about unacceptable process consequences, monitored assets and tags, process states, security-relevant threat effects and attacker assumptions, validation data, metrics, roles, lifecycle controls, and evidence obligations. Through a practice-oriented conceptual synthesis of AI-governance, ICS-security, operator-centered ICS, MLOps, and anomaly-detection literature, we propose eight policy-to-operation gaps: site-specific scope, objective mismatch, scenario-to-test-data validation, context integration, performance criteria, role-aware actionability, lifecycle and drift, and evidence reconstruction. We map each gap to its deployment failure mode and a candidate operational artifact, and outline an intended-use-based readiness process that assesses artifact sufficiency according to consequence and permitted use, while distinguishing automatable checks and assistive functions from accountable human decisions. OT is not the only domain in which these gaps arise; rather, it is a high-consequence stress case in which AI-specific, adversarial, and organizational gaps interact visibly and expensively. We derive open research questions and argue for an explicit monitoring-domain profile that declares the conditions under which a detector is considered operationally valid for the declared use and an alarm candidate may be presented as an alarm for escalation or to support security decisions and incident reconstruction. The paper calls for a shift from model-centered anomaly detection to deployment-centered AI-assisted security monitoring that is scoped, adversary-aware, contextualized, actionable, maintainable, and reconstructable.</p>
-                    </div>
-                </details>
-            </article>
-            </div>
-        </section>
+
         </div>
         <p class="ap-empty" hidden>No papers match these filters. Try another search or clear the filters.</p>
     </div>
